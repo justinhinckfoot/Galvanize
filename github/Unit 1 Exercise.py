@@ -47,3 +47,16 @@ while user_input >= x:
 # Challenge 4
 # Write a script that copmutes the greatest common divisor
 # between two user inputted positive numbers and prints the result.
+
+user_input = int(input('Please enter the first test value: '))
+second_user_input = int(input('Please enter the second test value: '))
+divisor = 1
+gcd = 1
+
+while divisor <= user_input or divisor <= second_user_input:
+    if user_input % divisor == 0 and second_user_input % divisor == 0:
+        gcd = divisor
+        divisor += 1
+    else:
+        divisor += 1
+print(gcd)
