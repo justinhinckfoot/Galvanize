@@ -37,9 +37,12 @@ print(total)
 user_input = int(input('Enter a value to view all positive divisors: '))
 x = 1
 
-while user_input % x == 0 or user_input == x:
-    print(x)
-    x += 1
+while user_input >= x:
+    if user_input % x == 0:
+        print(x)
+        x += 1
+    else:
+        x += 1
 
 # Challenge 4
 # Write a script that copmutes the greatest common divisor
