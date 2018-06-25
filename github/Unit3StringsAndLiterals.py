@@ -34,3 +34,12 @@ n = int(input('Enter the length of the tail: '))
 length = str('-') * n
 
 print(length + str('>'))
+
+# Challenge 3
+
+# Write a program that takes a user-inputted string, converts it
+# to all caps and prints it outself.
+
+string = str(input('Enter a string to covert: '))
+
+print(string.upper())
