@@ -77,7 +77,7 @@
 # Challenge 1
 
 # Write a program that takes a user-inputted string and prints out
-# the character at index 5. If the string has less than 6 characters, 
+# the character at index 5. If the string has less than 6 characters,
 # your program should print 'String too short.'
 
 string = str(input('Enter a string to test: '))
@@ -86,3 +86,17 @@ if len(string) < 6:
     print('String too short.')
 else:
     print(string[5])
+
+# Challenge 2
+
+# Write a program that takes a user-inputted string and prints out
+# the substring of characters at the 2nd, 3rd, and 4th index
+# positions. If the string has less than 5 characters, your program
+# should print 'String too short.'
+
+string = str(input('Enter a string to test: '))
+
+if len(string) < 5:
+    print('String too short.')
+else:
+    print(string[2:5])
