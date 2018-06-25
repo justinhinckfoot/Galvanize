@@ -58,3 +58,16 @@ if string.isupper() == True:
     print(string.lower())
 else:
     print(string.upper() + '!!!')
+
+# Challenge 5
+
+# Write a program that takes a user-inputted string and tests to see
+# if it ends with three exclamation points. If it does, replace the "!!!"
+# with a period ("."). Your program should then print out the stringself.
+
+string = str(input('Enter a string to convert: '))
+
+if string.endswith("!!!"):
+    print(string.replace("!!!","."))
+else:
+    print(string)
