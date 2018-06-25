@@ -203,3 +203,15 @@ print({pi:.10f})
 
         print(l.count(s2))
         print(l.count(l[1]))
+
+# Challenge 2
+
+        # Write a program that takes a series of user-inputted, comma-separated
+        # strings and prints a list of those strings with the first element repeated
+        # at the end.
+
+        user_input = str(input('Enter a list of command-separated values: '))
+        list = user_input.split(', ')
+
+        list.append(list[0])
+        print(list)
