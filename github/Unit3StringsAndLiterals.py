@@ -100,3 +100,17 @@ if len(string) < 5:
     print('String too short.')
 else:
     print(string[2:5])
+
+# Challenge 3
+
+# Write a program that takes a user-inputted string and prints
+# out every other character from that string, beginning at index 1.
+# If the string has less than 2 characters, your program should
+# print 'String too short.'
+
+string = str(input('Enter a string to test: '))
+
+if len(string) < 2:
+    print('String too short.')
+else:
+    print(string[1::2])
