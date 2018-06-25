@@ -125,5 +125,30 @@ string = str(input('Enter a string to test: '))
 
 if len(string) < 2:
     print('String too short.')
-else: 
+else:
     print(string[-2])
+
+# Challenge 5
+
+# The sample below uses a while loop to print out every other character
+# (starting at index 0) from a user-inputted string in uppercase.
+# Rewrite the code to use a for loop instead; your program's output
+# should be the same as before.
+
+# Original Code
+
+# Example input() statement
+s = input('Please enter a string: ')
+
+i = 0
+while i < len(s):
+    print(s[i].upper())
+    i += 2
+
+# Rewritten Code
+
+string = str(input('Enter a string to test: '))
+i = 0
+
+for i in string[::2]:
+    print(i.upper())
