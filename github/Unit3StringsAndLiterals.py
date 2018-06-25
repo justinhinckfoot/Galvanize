@@ -114,3 +114,16 @@ if len(string) < 2:
     print('String too short.')
 else:
     print(string[1::2])
+
+# Challenge 4
+
+# Write a program that takes a user-inputted string and prints
+# out the next-to-last character from that string. If the stringself
+# has less than 2 characters, your program should print 'String too short.'
+
+string = str(input('Enter a string to test: '))
+
+if len(string) < 2:
+    print('String too short.')
+else: 
+    print(string[-2])
