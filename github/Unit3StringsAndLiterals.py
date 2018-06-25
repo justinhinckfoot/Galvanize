@@ -31,4 +31,6 @@ print(s)
 
 n = int(input('Enter the length of the tail: '))
 
-(str('-') * n) + str('>')
+length = str('-') * n
+
+print(length + str('>'))
