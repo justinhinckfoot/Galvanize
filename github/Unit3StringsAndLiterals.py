@@ -163,3 +163,14 @@
 string = str(input('Enter your name: '))
 
 print('Hello, {}!'.format(string))
+
+# Challenge 2
+
+# Write a program that takes a user-inputted integer and prints out
+# Two times <input> is <result>, where <input> is the inputted integer
+# and <result> is twice the value.
+
+number = int(input('Enter a value to multiply: '))
+double = number * 2
+
+print('Two times {} is {}.'.format(number,double))
