@@ -74,81 +74,92 @@
 
 # Lesson 2 -- Strings Indexing and Iterations
 
+        # Challenge 1
+
+        # Write a program that takes a user-inputted string and prints out
+        # the character at index 5. If the string has less than 6 characters,
+        # your program should print 'String too short.'
+
+        string = str(input('Enter a string to test: '))
+
+        if len(string) < 6:
+            print('String too short.')
+        else:
+            print(string[5])
+
+        # Challenge 2
+
+        # Write a program that takes a user-inputted string and prints out
+        # the substring of characters at the 2nd, 3rd, and 4th index
+        # positions. If the string has less than 5 characters, your program
+        # should print 'String too short.'
+
+        string = str(input('Enter a string to test: '))
+
+        if len(string) < 5:
+            print('String too short.')
+        else:
+            print(string[2:5])
+
+        # Challenge 3
+
+        # Write a program that takes a user-inputted string and prints
+        # out every other character from that string, beginning at index 1.
+        # If the string has less than 2 characters, your program should
+        # print 'String too short.'
+
+        string = str(input('Enter a string to test: '))
+
+        if len(string) < 2:
+            print('String too short.')
+        else:
+            print(string[1::2])
+
+        # Challenge 4
+
+        # Write a program that takes a user-inputted string and prints
+        # out the next-to-last character from that string. If the stringself
+        # has less than 2 characters, your program should print 'String too short.'
+
+        string = str(input('Enter a string to test: '))
+
+        if len(string) < 2:
+            print('String too short.')
+        else:
+            print(string[-2])
+
+        # Challenge 5
+
+        # The sample below uses a while loop to print out every other character
+        # (starting at index 0) from a user-inputted string in uppercase.
+        # Rewrite the code to use a for loop instead; your program's output
+        # should be the same as before.
+
+        # Original Code
+
+        # Example input() statement
+        s = input('Please enter a string: ')
+
+        i = 0
+        while i < len(s):
+            print(s[i].upper())
+            i += 2
+
+        # Rewritten Code
+
+        string = str(input('Enter a string to test: '))
+        i = 0
+
+        for i in string[::2]:
+            print(i.upper())
+
+# Lesson 3 -- String Formatting
+
 # Challenge 1
 
-# Write a program that takes a user-inputted string and prints out
-# the character at index 5. If the string has less than 6 characters,
-# your program should print 'String too short.'
-
-string = str(input('Enter a string to test: '))
-
-if len(string) < 6:
-    print('String too short.')
-else:
-    print(string[5])
-
-# Challenge 2
-
-# Write a program that takes a user-inputted string and prints out
-# the substring of characters at the 2nd, 3rd, and 4th index
-# positions. If the string has less than 5 characters, your program
-# should print 'String too short.'
-
-string = str(input('Enter a string to test: '))
-
-if len(string) < 5:
-    print('String too short.')
-else:
-    print(string[2:5])
-
-# Challenge 3
-
 # Write a program that takes a user-inputted string and prints
-# out every other character from that string, beginning at index 1.
-# If the string has less than 2 characters, your program should
-# print 'String too short.'
+# out 'Hello, <input>!' in response, where <input> is the inputted string.
 
-string = str(input('Enter a string to test: '))
+string = str(input('Enter your name: '))
 
-if len(string) < 2:
-    print('String too short.')
-else:
-    print(string[1::2])
-
-# Challenge 4
-
-# Write a program that takes a user-inputted string and prints
-# out the next-to-last character from that string. If the stringself
-# has less than 2 characters, your program should print 'String too short.'
-
-string = str(input('Enter a string to test: '))
-
-if len(string) < 2:
-    print('String too short.')
-else:
-    print(string[-2])
-
-# Challenge 5
-
-# The sample below uses a while loop to print out every other character
-# (starting at index 0) from a user-inputted string in uppercase.
-# Rewrite the code to use a for loop instead; your program's output
-# should be the same as before.
-
-# Original Code
-
-# Example input() statement
-s = input('Please enter a string: ')
-
-i = 0
-while i < len(s):
-    print(s[i].upper())
-    i += 2
-
-# Rewritten Code
-
-string = str(input('Enter a string to test: '))
-i = 0
-
-for i in string[::2]:
-    print(i.upper())
+print('Hello, {}!'.format(string))
