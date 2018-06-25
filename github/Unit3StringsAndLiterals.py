@@ -189,14 +189,17 @@ print({pi:.10f})
 
 # Lesson 4 -- Lists
 
-# Challenge 1
+        # Challenge 1
 
-# Write a program that takes in:
-    # s1 -- A comma-separated string
-    # s2 -- A string to be counted
-# And prints the number of occurances of the second string within
-# the string's comma-separated members.
+        # Write a program that takes in:
+            # s1 -- A comma-separated string
+            # s2 -- A string to be counted
+        # And prints the number of occurances of the second string within
+        # the string's comma-separated members.
 
-list = str(input('Enter a list of comma-separated values: '))
+        s1 = str(input('Enter a list of comma-separated values: '))
+        s2 = str(input('Enter a value to count from list: '))
+        l = s1.split(', ')
 
-list.count(list[1])
+        print(l.count(s2))
+        print(l.count(l[1]))
