@@ -43,3 +43,18 @@ print(length + str('>'))
 string = str(input('Enter a string to covert: '))
 
 print(string.upper())
+
+# Challenge 4
+
+# Write a program that takes a user-inputted string and does the following:
+    # if the string is in all caps, convert it to lower case
+    # if the string is not in all caps, covert it to all caps and append
+        # 3 exclamation marks to the entered
+# your program should then print out the converted stringself.
+
+string = str(input('Enter a string to convert: '))
+
+if string.isupper() == True:
+    print(string.lower())
+else:
+    print(string.upper() + '!!!')
