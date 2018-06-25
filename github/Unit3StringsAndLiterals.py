@@ -155,22 +155,48 @@
 
 # Lesson 3 -- String Formatting
 
+        # Challenge 1
+
+        # Write a program that takes a user-inputted string and prints
+        # out 'Hello, <input>!' in response, where <input> is the inputted string.
+
+        string = str(input('Enter your name: '))
+
+        print('Hello, {}!'.format(string))
+
+        # Challenge 2
+
+        # Write a program that takes a user-inputted integer and prints out
+        # Two times <input> is <result>, where <input> is the inputted integer
+        # and <result> is twice the value.
+
+        number = int(input('Enter a value to multiply: '))
+        double = number * 2
+
+        print('Two times {} is {}.'.format(number,double))
+
+# Challenge 3
+
+# Write a program that takes a user-inputted integer and prints
+# out the value of pi to the number of decimal places specified
+# by the integer.
+
+from math import pi
+
+N = int(input('Enter the number of decimal points: '))
+
+print({pi:.10f})
+
+# Lesson 4 -- Lists
+
 # Challenge 1
 
-# Write a program that takes a user-inputted string and prints
-# out 'Hello, <input>!' in response, where <input> is the inputted string.
+# Write a program that takes in:
+    # s1 -- A comma-separated string
+    # s2 -- A string to be counted
+# And prints the number of occurances of the second string within
+# the string's comma-separated members.
 
-string = str(input('Enter your name: '))
+list = str(input('Enter a list of comma-separated values: '))
 
-print('Hello, {}!'.format(string))
-
-# Challenge 2
-
-# Write a program that takes a user-inputted integer and prints out
-# Two times <input> is <result>, where <input> is the inputted integer
-# and <result> is twice the value.
-
-number = int(input('Enter a value to multiply: '))
-double = number * 2
-
-print('Two times {} is {}.'.format(number,double))
+list.count(list[1])
