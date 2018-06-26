@@ -176,11 +176,11 @@
         for thing in my_dct.items():
             print(thing)
 
-# Challenge 2
+        # Challenge 2
 
         # Modify the code below to print the capitals that start with an s
 
-        # Original Code 
+        # Original Code
 
         my_dct = {'Texas': 'Austin', 'Indiana': 'Indianapolis', 'Illinois': 'Chicago',
                   'New York': 'Albany', 'Iowa': 'Des Moines',
@@ -198,3 +198,20 @@
         for capital in my_dct.values():
             if capital.startswith('S'):
                 print(capital)
+
+# Lesson 5 -- Sets
+
+        # Challenge 1
+
+        # Use a for loop to iterate over and print each element in my_set
+
+        # Original Code
+
+        my_set = {2, 3, 5, 7, 11}
+
+        # Submitted Code
+
+        my_set = {2, 3, 5, 7, 11}
+
+        for element in my_set:
+            print(element)
