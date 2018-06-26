@@ -233,3 +233,19 @@
         for element in my_new_set:
             if element not in my_set:
                 print(element)
+
+# Lesson 6 - Dictionary Comprehensions
+
+        # Challenge 1
+
+        # Take input from the user with a list of words to capitalize
+        # These words should be separated by spaces
+        # Then create a dictionary that has keys that are the original word 
+        # and values that are the uppercase version of the word
+
+        user_input = input('Enter a space-separated list of values: ')
+        user_set = user_input.split(' ')
+
+        user_dict = {input: input.upper() for input in user_set}
+
+        print(user_dict)
