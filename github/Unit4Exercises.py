@@ -215,3 +215,21 @@
 
         for element in my_set:
             print(element)
+
+        # Challenge 2
+
+        # Use a for loop to print the values in my_new_set that do NOT appear in my_set
+
+        # Original Code
+
+        my_set = {2, 3, 5, 7, 11}
+        my_new_set = {1, 3, 5, 7, 9}
+
+        # Submitted Code
+
+        my_set = {2, 3, 5, 7, 11}
+        my_new_set = {1, 3, 5, 7, 9}
+
+        for element in my_new_set:
+            if element not in my_set:
+                print(element)
