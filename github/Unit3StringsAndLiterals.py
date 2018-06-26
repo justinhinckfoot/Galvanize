@@ -234,7 +234,7 @@ print({pi:.10f})
 
         # Write a program that takes a series of user-inputted,
         # comma-separated strings, creates a list from it, and turns that list
-        # into a word-unit palindrome with an odd number of elements. 
+        # into a word-unit palindrome with an odd number of elements.
         # This implies that the palindrome will 'hinge' on its middle element.
 
         user_input = str(input('Enter a list of comma-separated values: '))
@@ -245,3 +245,13 @@ print({pi:.10f})
 
         user_list.extend(duplicate)
         print(user_list)
+
+        # Challenge 5
+
+        # Write a program that takes a series of user-inputted, comma-separated
+        # strings, and prints out a list of the odd-indexed elements.
+
+        user_input = str(input('Enter a list of comma-separated values: '))
+        user_list = user_input.split(', ')
+
+        print(user_list[1::2])
