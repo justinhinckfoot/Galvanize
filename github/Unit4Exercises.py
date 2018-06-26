@@ -132,3 +132,26 @@
         # Austin
         # Texas, Austin
         # {Texas: Austin}
+
+        # Challenge 2
+
+        # Modify the code below so that it takes the user inputted state,
+        # and if it is in my_dct, print out its capital
+        # If it's not, then print out 'Capital not found!'
+
+        # Original code
+
+        # Example input() statement
+        state = input('Please enter a State: ')
+
+        my_dct = {'Texas': 'Austin', 'Indiana': 'Indianapolis', 'Illinois': 'Chicago', 'New York': 'Albany'}
+
+        print(my_dct)
+
+        # Submitted Code
+
+        state = str(input('Enter a state to view its capital: '))
+
+        my_dct = {'Texas': 'Austin', 'Indiana': 'Indianapolis', 'Illinois': 'Chicago', 'New York': 'Albany'}
+
+        print(my_dct.get(state,'Capital not found!'))
