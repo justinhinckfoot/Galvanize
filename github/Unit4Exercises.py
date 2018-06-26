@@ -103,3 +103,14 @@
 
         suit_tup = ('diamond', 'club', 'spade', 'heart')
         print(suit_tup[1:4:2])
+
+        # Challenge 4
+
+        # Say that you want to add a new suit to the card deck
+        # Call it gorilla
+        # Which of the following options can be used to add gorilla to your deck
+
+        # suit_tup.append('gorilla')
+        # suit_tup. += ('gorilla')
+        # suit_tup += tuple('gorilla')
+        # suit_tup = ('diamond, 'club', 'spade', 'heart', 'gorilla') XXXXXXXXXXXXXXXXX
