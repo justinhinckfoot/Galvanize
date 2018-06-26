@@ -155,3 +155,23 @@
         my_dct = {'Texas': 'Austin', 'Indiana': 'Indianapolis', 'Illinois': 'Chicago', 'New York': 'Albany'}
 
         print(my_dct.get(state,'Capital not found!'))
+
+# Lesson 4 -- Getting More Out of Dependencies
+
+        # Challenge 1
+
+        # Change the loop so that it not only prints the key at every iteration,
+        # but both the key and value
+        # These key-value pairs should be printed as tuples 
+
+        # Original Code
+
+        my_dct = {'Texas': 'Austin', 'Indiana': 'Indianapolis', 'Illinois': 'Chicago', 'New York': 'Albany'}
+        for state in my_dct:
+            print(state)
+
+        # Submitted Code
+
+        my_dct = {'Texas': 'Austin', 'Indiana': 'Indianapolis', 'Illinois': 'Chicago', 'New York': 'Albany'}
+        for thing in my_dct.items():
+            print(thing)
