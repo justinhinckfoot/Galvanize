@@ -282,3 +282,28 @@ print({pi:.10f})
         user_list = user_input.split(', ')
 
         lowercase = [print(string.lower()) for string in user_list]
+
+# Exercise 1 -- Practice with Strings and Lists
+
+# Part 1 -- Practice with for Loops
+
+        # Challenge 1
+
+        # Write a script that computes the factorial of a user-inputted positive
+        # number and prints the result
+
+        user_input = int(input('Enter a value to compute its factorial: '))
+        total = 1
+
+        while user_input > 0:
+            total *= user_input
+            user_input -= 1
+        print(total)
+
+        user_input = int(input('Enter a value to compute its factorial: '))
+        factorial_list = list(range(1,user_input))
+        total = user_input
+
+        for num in factorial_list:
+            total *= num
+        print(total)
