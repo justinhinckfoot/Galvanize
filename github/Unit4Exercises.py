@@ -162,7 +162,7 @@
 
         # Change the loop so that it not only prints the key at every iteration,
         # but both the key and value
-        # These key-value pairs should be printed as tuples 
+        # These key-value pairs should be printed as tuples
 
         # Original Code
 
@@ -175,3 +175,26 @@
         my_dct = {'Texas': 'Austin', 'Indiana': 'Indianapolis', 'Illinois': 'Chicago', 'New York': 'Albany'}
         for thing in my_dct.items():
             print(thing)
+
+# Challenge 2
+
+        # Modify the code below to print the capitals that start with an s
+
+        # Original Code 
+
+        my_dct = {'Texas': 'Austin', 'Indiana': 'Indianapolis', 'Illinois': 'Chicago',
+                  'New York': 'Albany', 'Iowa': 'Des Moines',
+                  'California': 'Sacramento', 'Utah': 'Salt Lake City',
+                  'Ohio': 'Columbus'}
+        for state in my_dct:
+            print(my_dct[state])
+
+        # Submitted Code
+
+        my_dct = {'Texas': 'Austin', 'Indiana': 'Indianapolis', 'Illinois': 'Chicago',
+                  'New York': 'Albany', 'Iowa': 'Des Moines',
+                  'California': 'Sacramento', 'Utah': 'Salt Lake City',
+                  'Ohio': 'Columbus'}
+        for capital in my_dct.values():
+            if capital.startswith('S'):
+                print(capital)
