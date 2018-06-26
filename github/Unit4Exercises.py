@@ -240,7 +240,7 @@
 
         # Take input from the user with a list of words to capitalize
         # These words should be separated by spaces
-        # Then create a dictionary that has keys that are the original word 
+        # Then create a dictionary that has keys that are the original word
         # and values that are the uppercase version of the word
 
         user_input = input('Enter a space-separated list of values: ')
@@ -249,3 +249,24 @@
         user_dict = {input: input.upper() for input in user_set}
 
         print(user_dict)
+
+# Challenge 2
+
+# Create tuples that have a word of mixed case as the first element
+# and an entirely lowercase string as the element element
+# Take a list of space separated words for your input
+
+user_input = input('Enter a space-separated list of values: ')
+user_set = user_input.split(' ')
+
+user_dict = {input: input.lower() for input in user_set}
+
+user_tuple = tuple(user_dict)
+
+for item in user_set.items():
+    tuple(item)
+    print(item)
+
+print(user_dict)
+print(user_tuple)
+result =
