@@ -114,3 +114,21 @@
         # suit_tup. += ('gorilla')
         # suit_tup += tuple('gorilla')
         # suit_tup = ('diamond, 'club', 'spade', 'heart', 'gorilla') XXXXXXXXXXXXXXXXX
+
+# Lesson 3 -- Dictionaries
+
+        # Challenge 1
+
+        # Consider the following code:
+
+        my_dct = {'Texas': 'Austin', 'Indiana': 'Indianapolis', 'Illinois': 'Chicago', 'New York': 'New York City'}
+        for element in my_dct:
+            print(element)
+
+        # Which of the following could be one of the lines printed by this code?
+
+        # Texas XXXXXXXXXXXXXXXXXXXXXXX -- when iterating through a dictionary, each
+                # key is accessed so the code prints the states, not the capitals
+        # Austin
+        # Texas, Austin
+        # {Texas: Austin}
