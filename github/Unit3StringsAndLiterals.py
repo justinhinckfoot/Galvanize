@@ -255,3 +255,17 @@ print({pi:.10f})
         user_list = user_input.split(', ')
 
         print(user_list[1::2])
+
+        # Challenge 6
+
+        # Write a program that takes a series of user-inputted, comma-separated
+        # strings, creates a list from it, sorts the list, then prints the sorted list
+        # with each element numbered, starting from 1
+
+        user_input = str(input('Enter a list of comma-separated values: '))
+        user_list = user_input.split(', ')
+
+        user_list.sort()
+
+        for count, ele in enumerate(user_list,1):
+            print(count, ele)
