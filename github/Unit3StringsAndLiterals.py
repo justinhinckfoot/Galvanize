@@ -204,14 +204,28 @@ print({pi:.10f})
         print(l.count(s2))
         print(l.count(l[1]))
 
-# Challenge 2
+        # Challenge 2
 
         # Write a program that takes a series of user-inputted, comma-separated
         # strings and prints a list of those strings with the first element repeated
         # at the end.
 
         user_input = str(input('Enter a list of command-separated values: '))
-        list = user_input.split(', ')
+        user_list = user_input.split(', ')
 
-        list.append(list[0])
+        user_list.append(user_list[0])
         print(list)
+
+        # Challenge 3
+
+        # Write a program that takes a series of user-inputted, comma-separated
+        # strings, creates a list from it, and turns that list into a word-unit
+        # palindrome; i.e., a list with the same words forward and backwardself.
+
+        user_input = str(input('Enter a list of comma-separated values: '))
+        user_list = user_input.split(', ')
+        duplicate = list(user_list)
+
+        duplicate.reverse()
+        user_list.extend(duplicate)
+        print(user_list)
