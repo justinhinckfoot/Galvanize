@@ -269,3 +269,16 @@ print({pi:.10f})
 
         for count, ele in enumerate(user_list,1):
             print(count, ele)
+
+# Lesson 5 -- String Comprehension
+
+        # Challenge 1
+
+        # Write a one-liner that takes in a list of words like ['SPAM','Spam','spam']
+        # and outputs a list with the lowercase version of each word. Use a list
+        # comprehension, do not use a for loop!
+
+        user_input = str(input('Enter a list of comma-separated values: '))
+        user_list = user_input.split(', ')
+
+        lowercase = [print(string.lower()) for string in user_list]
