@@ -293,3 +293,40 @@
         for i in range(1,n):
             n *= i
         return n
+
+# Question 3 -- Is a number prime?
+
+    # Fill in the following function according to the docstring
+
+    # Provided Code
+
+    def is_prime(n):
+        '''
+        Return True if the input is prime, False otherwise
+        Parameters
+        ----------
+        n: {int} input integer
+
+        Returns
+        -------
+        is_prime: {bool} whether n is prime
+        '''
+        pass
+
+    # Submitted Code
+
+    def is_prime(n):
+        '''
+        Return True if the input is prime, False otherwise
+        Parameters
+        ----------
+        n: {int} input integer
+
+        Returns
+        -------
+        is_prime: {bool} whether n is prime
+        '''
+        for i in range(2,n):
+            if n % i == 0:
+                return False
+        return True
