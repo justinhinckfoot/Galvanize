@@ -330,3 +330,69 @@
             if n % i == 0:
                 return False
         return True
+
+# Question 4 -- Next Perfect Square
+
+    # A number is a perfect square if it is the square of an integer
+    # For this question, you have access to the is_perfect_square() function,
+    # which returns True is the number is a perfect square, and False if it is not
+    # Use this function to fill out the code provided
+
+    # Provided Code
+
+    def next_perfect_square(number):
+        '''
+        Returns the next perfect square of the input number, if the input number
+        is not a perfect square, returns -1.
+        Ex:
+        next_perfect_square(10)
+        >>> -1
+        next_perfect_square(9)
+        >>> 16
+        next_perfect_square(25)
+        >>> 36
+        next_perfect_square(37)
+        >>> -1
+
+        Parameters
+        ----------
+        number: {int}
+
+        Returns
+        -------
+        next_perfect: {int} the next perfect square, or -1 if number is not a
+        perfect square
+        '''
+        is_perfect_square(number)
+
+    # Submitted Code
+
+    def next_perfect_square(n):
+        '''
+        Returns the next perfect square of the input number, if the input number
+        is not a perfect square, returns -1.
+        Ex:
+        next_perfect_square(10)
+        >>> -1
+        next_perfect_square(9)
+        >>> 16
+        next_perfect_square(25)
+        >>> 36
+        next_perfect_square(37)
+        >>> -1
+
+        Parameters
+        ----------
+        number: {int}
+
+        Returns
+        -------
+        next_perfect: {int} the next perfect square, or -1 if number is not a
+        perfect square
+        '''
+        import math
+
+        if is_perfect_square(n) == True:
+            return (math.sqrt(n)+1) ** 2
+        else:
+            return -1
