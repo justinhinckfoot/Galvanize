@@ -128,3 +128,31 @@ you can also set a default value for a parameter if the user doesn't enter a val
       for element in range(n):
           if element % 2 == 0:
               evens.append(element)
+
+Lesson 3 -- Function Arguments and Variable Scope
+-------------------------------------------------
+python matches up the position of arguments that are passed to the position
+of the parameters that are given in the function definition
+    ^^^ this is known as positional arguments
+
+you can also assign arguments by calling the keyword and assigning the value
+
+you must pass all positional arguments before passing any keyword arguments
+
+positional arguments are a tuple
+keyword arguments are dictionaries
+
+variable scope -- the part of your program in which a variable is visible
+
+global scope -- visible everywhere
+    can be used anywhere in your script
+    can be included in a function
+
+local scope -- only visible in the scope in which it is enclosed
+    local scope is typically within a function
+
+when referencing a variable, Python will search the following scopes (in order):
+    1. the current function's scope
+    2. any enclosing scope (containing functions)
+    3. the scope of the module that contains the code (aka global scope)
+    4. the built-in scope (including built-in functions)
