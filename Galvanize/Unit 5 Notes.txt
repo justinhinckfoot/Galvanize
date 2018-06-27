@@ -1,0 +1,72 @@
+Unit 5 Notes -- Python Functions
+
+• Unit 5 – Python Functions
+    ◦ Classroom Notes
+        ▪ functions allow you to reference the same logic in multiple places and only have one entry where the code needs to be updated to impact all references
+            • similar to a variable
+        ▪ a return() statement needs to be added after the function to return the result
+        ▪ you can include a variable, n, to the get_events() function to be referenced hwithin the function itself
+def get_evens(n, start):
+evens = []
+for element in range(start, n):
+    if element % 2 == 0:
+        evens.append(element)
+
+return(evens)
+        ▪ functions can use various data types (strings, ints, etc.)
+        ▪ can default a variable to a value and override it if a value is provided
+            • get_evens(n, start=0)
+            • can reverse the order but then need to define the value you’re setting
+                ◦ get_evens(start=25, n=100)
+        ▪ can manipulate a single value with a function:
+def FUNCTION(VALUE):
+return(VALUE+MANIPULATION)
+          FUNCTION(value)
+        ▪ including a question mark at the end of a function brings up the help info
+            • you can include a docstring for a custom function by entering the values within triple quotes
+        ▪ can return multiple values by separating them with a comma
+            • returns them as a tuple by default
+        ▪ can include if statements in a functions
+            • don’t need to add an else statement, simply enter down out of the if statement to continue the logic
+        ▪ can test the data type of a variable by using the isinstance() function
+            • isinstance(VALUE, TYPE)
+            • should try and avoid type checking wherever possible
+        ▪ can also include while and for loops within a function
+        ▪ scope rules
+            • within the current function’s scope
+            • any enclosing scope
+            • the scope of the module (global scope)
+            • the built-in scope
+                ◦ acts as a catch all if you use a variable name that is also a built in function (len)
+                    ▪ if len() does not exist as a variable then it will return the function len() values
+        ▪ can save a formula as a .py file and then import it to be used in other statements
+            • these are modules
+            • can be turned into scripts
+        ▪ sys – built in library to Python
+            • need to first import then so that you can use them
+            • import sys
+        ▪ run python from the terminal but starting the command with python
+            • can then call the file directly
+            • python give_me_evens.py VARIABLES
+        ▪ if __name__ == ‘__main__’:
+            • only runs if the file is executed from the command line
+            • will not function if the file is imported
+        ▪ sys.argv[X] is a list of X values
+        ▪ sys.path lists the modules Python has found in the order Python has found them
+        ▪ Tuesday, June 26, 2018 Homework
+            • Unit 5 – 3 Lessons
+            • Unit 5 – Exercise
+
+Unit Overview
+-------------
+functions are known as subroutine
+  subroutines -- a sequence of instructions that perform a specific task
+  subroutines are packaged together as units
+    units -- small independent pieces of code
+
+functions give us re-usability
+
+another reason to use functions is abstraction
+  users can simply trust that the function works and reuse it
+  allows for the function to be easily shared
+  allows for changes to be made without the users seeing the changes
