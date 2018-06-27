@@ -252,3 +252,44 @@
             if n % i == 0:
                 divisors.append(i)
         return(divisors)
+
+# Question 2 -- Factorial Again
+
+    # Fill in the following function according to the docstring
+
+    # Provided Code
+
+    def factorial(n):
+        '''
+        Returns the factorial of the input integer:
+            n * (n - 1) * (n - 2) * ... * 2 * 1
+        Parameters
+        ----------
+        n: {int} number to compute factorial of (must be greater than 0)
+
+        Returns
+        -------
+        n!: {int} factorial of n
+
+        '''
+        pass
+
+    # Submitted Code
+
+    def factorial(n):
+        '''
+        Returns the factorial of the input integer:
+            n * (n - 1) * (n - 2) * ... * 2 * 1
+        Parameters
+        ----------
+        n: {int} number to compute factorial of (must be greater than 0)
+
+        Returns
+        -------
+        n!: {int} factorial of n
+
+        '''
+
+        for i in range(1,n):
+            n *= i
+        return n
