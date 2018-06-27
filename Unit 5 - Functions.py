@@ -103,3 +103,17 @@
 
         # A = argument
         # B = parameter
+
+    # Lesson 3 -- Function Arguments and Variable Scope
+
+    # Question 1 -- Function Calls
+
+        # Consider the following function call:
+
+            get_multiples(divisor=7, n=42)
+
+        # Does it pass arguments by position or by keyword?
+
+            # By position
+
+            # By keyword XXXXXXXXXXXXXXXXXXX
