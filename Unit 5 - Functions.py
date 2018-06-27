@@ -92,4 +92,14 @@
                 def my_func1(var1, var2):
                     pass
 
-                # variables with defaults need to be made after variables w/o defaults   
+                # variables with defaults need to be made after variables w/o defaults
+
+    # Question 2 -- Parameter versus Argument
+
+        # Which of the following is a parameter and which is an argument?
+
+        # A. A value passed in to a function
+        # B. The name of a variable in a function definition
+
+        # A = argument
+        # B = parameter
