@@ -140,3 +140,21 @@
         # Write a valid call to the function
 
             lcm(4, 12)
+
+
+    # Quetion 3 -- Variable Scope
+
+        # Will the following code throw an error due to the variable scope issues?
+
+        x = 7
+
+        def some_function(z):
+            for index in range(z):
+                if index == x:
+                    return True
+            return False
+
+        some_function(7)
+
+        # Yes
+        # No XXXXXXXXXXXXXXXXXXX
