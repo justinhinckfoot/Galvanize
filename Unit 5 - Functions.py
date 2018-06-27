@@ -158,3 +158,52 @@
 
         # Yes
         # No XXXXXXXXXXXXXXXXXXX
+
+    # Question 4 -- Fix This Code
+
+    # The function below throws an error due to variable cope issues
+    # Fit it so that it does not do this
+
+    # Original Code
+
+    def calculate_series(n):
+    '''
+    calculate the nth value in the series:
+    a_i = 2 * a_(i-1) + 1
+    and where the initial value of the series, a_0, is initialized to 1.
+
+    Parameters
+    ----------
+    n: {int}
+
+    Returns
+    -------
+    a_n: {int} the nth series value
+
+    '''
+    for _ in range(n):
+        a = 2 * a + 1
+    return a
+
+    # Submitted Code
+
+    def calculate_series(n):
+        '''
+        calculate the nth value in the series:
+        a_i = 2 * a_(i-1) + 1
+        and where the initial value of the series, a_0, is initialized to 1.
+        
+        Parameters
+        ----------
+        n: {int}
+
+        Returns
+        -------
+        a_n: {int} the nth series value
+
+        '''
+        a = 1
+
+        for _ in range(n):
+            a = 2 * a + 1
+        return a
