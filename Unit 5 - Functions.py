@@ -66,3 +66,30 @@
                 if element % 3 == 0:
                     evens.append(element)
             return evens
+
+    # Lesson 2 -- Functions with Parameters and Arguments
+
+    # Question 1 -- Python Function Declarations
+
+        # Which of the following function definitions are invalid?
+
+            # A. XXXXXXXXXXXXXXXXXXXXXXXXXXX
+                def my_func1(var1='Hello', var2):
+                    pass
+            # B.
+                def my_func1(var1, var2='Hello'):
+                    pass
+            # C.
+                def my_func1(var1, var2=35):
+                    pass
+            # D. XXXXXXXXXXXXXXXXXXXXXXXXXXX
+                def my_func1(var1=35, var2):
+                    pass
+            # E.
+                def my_func1(var1=35, var2='Hello'):
+                    pass
+            # F.
+                def my_func1(var1, var2):
+                    pass
+
+                # variables with defaults need to be made after variables w/o defaults
