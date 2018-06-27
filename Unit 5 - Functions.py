@@ -117,3 +117,26 @@
             # By position
 
             # By keyword XXXXXXXXXXXXXXXXXXX
+
+    # Question 2 -- Call a Function
+
+        # Given the following function:
+
+            def lcm(a, b):
+                """
+                Find the least common multiple of two numbers
+
+                Parameters
+                ----------
+                a: {int} the first number
+                b: {int} the second number
+
+                Returns
+                -------
+                n: {int} the least common mulitple of a and b
+                """
+                return abs(a * b) / gcd(a, b)
+
+        # Write a valid call to the function
+
+            lcm(4, 12)
