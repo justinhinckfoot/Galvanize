@@ -43,3 +43,26 @@
                 if element % 2 == 0:
                     evens.append(element)
             return evens
+
+    # Question 3 -- Modify get_evens Function Again
+
+        # Modify the get_evens function below so it will output the
+        # multiples of 3 instead of 2 from 0 to 18
+
+        # Provided Code
+
+        def get_evens():
+            evens = []
+            for element in range(10):
+                if element % 2 == 0:
+                    evens.append(element)
+            return evens
+
+        # Submitted Code
+
+        def get_evens():
+            evens = []
+            for element in range(19):
+                if element % 3 == 0:
+                    evens.append(element)
+            return evens
