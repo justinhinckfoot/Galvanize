@@ -70,3 +70,31 @@ another reason to use functions is abstraction
   users can simply trust that the function works and reuse it
   allows for the function to be easily shared
   allows for changes to be made without the users seeing the changes
+
+Lesson 1 -- Introduction to Python Functions
+--------------------------------------------
+there are numerous built-in functions we've worked with already (len() range())
+
+defining functions begins with the 'def' statement followed by a space
+    immediately following that is the function name
+    immediately following the function name are open & closed parentheses
+    immediately following the parentheses is a colon
+
+def my_func():
+  pass
+
+in order to return a value after running the function, include the return keyword
+as the last line in the function
+
+def my_func():
+  pass
+
+def get_evens():
+    evens = []
+    for element in range(10):
+        if element % 2 == 0:
+            evens.append(element)
+
+    return evens
+
+return is similar to the break function -- once Python sees it, it exits the function
