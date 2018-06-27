@@ -92,4 +92,4 @@
                 def my_func1(var1, var2):
                     pass
 
-                # variables with defaults need to be made after variables w/o defaults
+                # variables with defaults need to be made after variables w/o defaults 
