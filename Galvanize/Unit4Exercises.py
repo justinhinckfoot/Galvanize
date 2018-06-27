@@ -290,3 +290,5 @@ result =
 
         for i, j in zip(user_list[0::2],user_list[1::2]):
             tuple_list.append((i, j))
+
+        print(tuple_list)
