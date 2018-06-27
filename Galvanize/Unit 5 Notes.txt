@@ -98,3 +98,33 @@ def get_evens():
     return evens
 
 return is similar to the break function -- once Python sees it, it exits the function
+
+Lesson 2 -- Functions with Parameters and Arguments
+---------------------------------------------------
+functions can be defined so that their behavior changes depending on what
+values are passed to them
+
+any data structure can be passed to a function
+
+arguments -- values that are passed to a function
+
+you can enter the names of the variables you expect users to pass to the function
+    these are called parameters
+
+you can add a parameter to users to set the range of values used in previous examples
+where n is the parameter
+
+    def get_evens(n):
+        evens = []
+        for element in range(n):
+            if element % 2 == 0:
+                evens.append(element)
+
+you can also set a default value for a parameter if the user doesn't enter a values
+  you can place an equal sign next to the parameter with the default value after
+
+  def get_evens(n=5):  <<<<< sets n to 5 if the user doesn't enter a value
+      evens = []
+      for element in range(n):
+          if element % 2 == 0:
+              evens.append(element)
