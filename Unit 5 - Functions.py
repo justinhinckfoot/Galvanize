@@ -1,6 +1,6 @@
 # Unit 5 -- Python Functions
 
-    # Lesson 1 -- Introduction to Python Functions
+# Lesson 1 -- Introduction to Python Functions
 
     # Question 1 -- Function Outputs
 
@@ -67,7 +67,7 @@
                     evens.append(element)
             return evens
 
-    # Lesson 2 -- Functions with Parameters and Arguments
+# Lesson 2 -- Functions with Parameters and Arguments
 
     # Question 1 -- Python Function Declarations
 
@@ -104,7 +104,7 @@
         # A = argument
         # B = parameter
 
-    # Lesson 3 -- Function Arguments and Variable Scope
+# Lesson 3 -- Function Arguments and Variable Scope
 
     # Question 1 -- Function Calls
 
@@ -192,7 +192,7 @@
         calculate the nth value in the series:
         a_i = 2 * a_(i-1) + 1
         and where the initial value of the series, a_0, is initialized to 1.
-        
+
         Parameters
         ----------
         n: {int}
@@ -207,3 +207,48 @@
         for _ in range(n):
             a = 2 * a + 1
         return a
+
+# Exercise 1 -- Checkpoint
+
+# Question 1 -- Practice with Functions 1
+
+    # Fill in the following function according to the docstring
+
+    # Provided Code
+
+    def get_divisors(n):
+        '''
+        This function calculates and returns all of the divisors of n, between 1 and
+        n, inclusive.
+
+        Parameters
+        ----------
+        n: {int}
+
+        Returns
+        -------
+        divisors: {list} all divisors of n in order from smallest to largest
+        '''
+        pass
+
+    # Submitted Code
+
+    def get_divisors(n):
+        '''
+        This function calculates and returns all of the divisors of n, between 1 and
+        n, inclusive.
+
+        Parameters
+        ----------
+        n: {int}
+
+        Returns
+        -------
+        divisors: {list} all divisors of n in order from smallest to largest
+        '''
+        divisors = []
+        max = n+1
+        for i in range(1,max):
+            if n % i == 0:
+                divisors.append(i)
+        return(divisors)
