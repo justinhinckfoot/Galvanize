@@ -24,6 +24,9 @@ arange generates a range array instead of a list
 
   np.sum(ARRAY) is faster than sum(LIST)
 
+
+
+
 Leveraging an Array
 ---------------------------
 leveraging .shape will indicate the format of the array
@@ -50,3 +53,19 @@ should avoid looping through an array
   arr.flatten()
 
 iterating through a list and an array with a for loop will yield about the same performance
+
+
+
+
+Indexing and Slicing
+---------------------------
+indexing and slicing work the same way as with lists and arrays
+
+Create an array of shape (4,5) starting with np.arange(20), then obtain the mean
+value of elements in rows 1, 2 inclusive and columns 1-3 inclusive (zero-based)
+
+import numpy as np
+
+arr = np.arange(20)
+arr = arr.reshape(4, 5)
+np.mean(arr[1:3, 1:4])
