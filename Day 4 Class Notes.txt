@@ -101,3 +101,22 @@ Boolean Indexing
 can filter for values that are TRUE in an index statement
     arr = np.arange(20)
     arr[arr > 7] <--- outputs all values in the arr variable that are greater than 7
+
+
+
+
+
+
+Fancy Indexing
+---------------------------
+can feed an array a list of indexing to see the individual values
+    fancy indexing must be passed as an index
+    arr[[1, 3, 5, -1]]
+    ^^^^^^^^^ provides the values in the 1, 3, 5, and -1 position from the arr array
+
+
+
+Day 4 Homework
+--------------------------
+Unit 6 - Lessons 1-3
+Unit 6 - Exercise 1
