@@ -43,3 +43,10 @@ a numpy array is mutuable but you cannot reshape the array
 
 can perform arithmetics on an array
     arr * 3 <---- multiples all values by 3
+
+should avoid looping through an array
+
+.flatten -- returns the array to a single array in one row
+  arr.flatten()
+
+iterating through a list and an array with a for loop will yield about the same performance
