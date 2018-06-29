@@ -161,33 +161,12 @@
 
     # Question 4 -- Fix This Code
 
-    # The function below throws an error due to variable cope issues
-    # Fit it so that it does not do this
+        # The function below throws an error due to variable cope issues
+        # Fit it so that it does not do this
 
-    # Original Code
+        # Original Code
 
-    def calculate_series(n):
-    '''
-    calculate the nth value in the series:
-    a_i = 2 * a_(i-1) + 1
-    and where the initial value of the series, a_0, is initialized to 1.
-
-    Parameters
-    ----------
-    n: {int}
-
-    Returns
-    -------
-    a_n: {int} the nth series value
-
-    '''
-    for _ in range(n):
-        a = 2 * a + 1
-    return a
-
-    # Submitted Code
-
-    def calculate_series(n):
+        def calculate_series(n):
         '''
         calculate the nth value in the series:
         a_i = 2 * a_(i-1) + 1
@@ -202,11 +181,32 @@
         a_n: {int} the nth series value
 
         '''
-        a = 1
-
         for _ in range(n):
             a = 2 * a + 1
         return a
+
+        # Submitted Code
+
+        def calculate_series(n):
+            '''
+            calculate the nth value in the series:
+            a_i = 2 * a_(i-1) + 1
+            and where the initial value of the series, a_0, is initialized to 1.
+
+            Parameters
+            ----------
+            n: {int}
+
+            Returns
+            -------
+            a_n: {int} the nth series value
+
+            '''
+            a = 1
+
+            for _ in range(n):
+                a = 2 * a + 1
+            return a
 
 # Exercise 1 -- Checkpoint
 
@@ -396,3 +396,56 @@
             return (math.sqrt(n)+1) ** 2
         else:
             return -1
+
+    # Question 6 -- Sum to Number
+
+    # Write a function that calculates how many pairs of numbers sum to a user
+    # inputted value (default to 0)
+
+    # Provided Code
+
+    def count_pair_sums(arr, number=0):
+        '''
+        Given an array, find the count of how many pairs of numbers in the array sum
+        to the input number
+
+        Parameters
+        ----------
+        arr: {list} list of integers (positive and negative)
+        number: number to see if pairs sum to (default 0)
+
+        Returns
+        -------
+        {int} the number of pairs found that sum to given number
+        '''
+        pass
+
+    # Submitted Code
+
+    def count_pair_sums(arr, number=0):
+        '''
+        Given an array, find the count of how many pairs of numbers in the array sum
+        to the input number
+
+        Parameters
+        ----------
+        arr: {list} list of integers (positive and negative)
+        number: number to see if pairs sum to (default 0)
+
+        Returns
+        -------
+        {int} the number of pairs found that sum to given number
+        '''
+
+        pairs = []
+        counter = 0
+
+        for i in range(len(arr)):
+            for j in range(i+1, len(arr)):
+                pairs.append((arr[i], arr[j]))
+
+        for pair in pairs:
+            if sum(pair) == number:
+                counter += 1
+
+        return counter
