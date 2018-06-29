@@ -20,3 +20,75 @@ vs iterating over values in a loop
 
 NumPy generally expects all elements are the same type -- usually float or int
     Panda can have a mix of types and messy real world data -- built on top of NumPy
+
+
+
+
+
+--------------------------------
+--------------------------------
+Lesson 1
+Create and Modify Arrays in NumPy
+--------------------------------
+--------------------------------
+#########################
+Rationale
+#########################
+arrays are similar to lists -- however arrays are mutable
+    arrays also support multi-dimensional indexing -- lists do not
+    arrays have restrictions to data types -- lists do not
+
+NumPy allows you to perform operations on vectors and matrices with ease and efficiency
+
+
+
+
+#########################
+Basic NumPy Usage
+#########################
+open a python session -- then type:
+
+  import numpy as np
+
+
+you can access NumPy methods and create NumPy databases by calling:
+
+  np.<method-name>()
+
+
+you can pass both a vector and a matrix into an array
+
+the .shape attribute will show you the shape of your NumPy object
+    the shape is represented as a tuple
+
+the .reshape method allows you to make the second dimension explicit
+
+
+
+
+#########################
+Indexing NumPy Arrays
+#########################
+NumPy arrays are referenced first by row, then by column
+  arr[1, 2] <-- would return the value from row #1 and column #3
+
+the .arange() function is similar to the range() function
+
+arrays can be sliced -- take a subset
+  arr[2:5] <-- returns all the values in 2nd, 3rd, and 4th row IDs
+
+
+
+#########################
+Modifying Arrays
+#########################
+arrays are mutable -- you can change values via indexing
+    arr[1, 2] = 5 <-- changes the value in row #1, column #3 to 5
+
+you can fill in a slice with a scalar too -- changes all values within the range to a new value
+    arr[1:2] = 100 <-- changes the values in row #1 to 100
+
+you can perform arithmetic on a single value or a slice in an array
+
+you can replace a slice entirely, as long as it's the same size
+    you can change values in an array but you cannot change the size of an array
