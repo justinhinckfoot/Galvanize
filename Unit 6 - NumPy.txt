@@ -1,0 +1,22 @@
+----------------------------------------------------------------
+----------------------------------------------------------------
+                      Unit 6 - NumPy
+----------------------------------------------------------------
+----------------------------------------------------------------
+
+
+
+
+--------------------------------
+--------------------------------
+Unit Overiew
+--------------------------------
+--------------------------------
+NumPy is a package that extends native Python to make working with
+data more convenient
+
+NumPy takes care of the working of going element by element through the array
+vs iterating over values in a loop
+
+NumPy generally expects all elements are the same type -- usually float or int
+    Panda can have a mix of types and messy real world data -- built on top of NumPy
