@@ -8,3 +8,11 @@ itertools.combinations
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 CIRCLE BACK AROUND TO UNIT 3 EXERCISES AND COMPLETE
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+NumPy
+--------------------------
+NumPy is a library that needs to be imported
+import numpy as np
+  assigns np as a variable -- shorthand
+
+using from numpy import * imports everything and can overwrite the built in functions
