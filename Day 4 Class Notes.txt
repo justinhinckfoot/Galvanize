@@ -69,3 +69,19 @@ import numpy as np
 arr = np.arange(20)
 arr = arr.reshape(4, 5)
 np.mean(arr[1:3, 1:4])
+
+
+numpy.zeros(X) creates an array of X zeros
+    can be helpful if you need to initialize an array and change some values after
+    could also use numpy.ones(X)
+
+numpy.random -- isn't a function but rather a sub-module within numpy
+    there are a number of functions in .random
+    numpy.random.FUNCTION
+
+numpy.random.randn(N) -- returns a random set of N values
+
+can string several values from numpy into a single command
+    np.arange(20).reshape(4,-1)[1:3, 1:4].mean()
+    ^^^^ creates an array of numbers 0-19, then reshapes it into a 4 x 5 array,
+          but only grabs rows 1 & 2 and columns 1-3, and then takes the mean of the values
