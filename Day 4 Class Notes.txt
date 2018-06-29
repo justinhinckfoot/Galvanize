@@ -1,0 +1,10 @@
+Day 4 Class Notes
+Thursday, June 28, 2018
+
+itertools help iterate over variables
+
+itertools.combinations
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+CIRCLE BACK AROUND TO UNIT 3 EXERCISES AND COMPLETE
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
