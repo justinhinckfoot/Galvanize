@@ -23,3 +23,23 @@ arange generates a range array instead of a list
   when dealing with large ranges of values, an array will be more performant than a range
 
   np.sum(ARRAY) is faster than sum(LIST)
+
+Leveraging an Array
+---------------------------
+leveraging .shape will indicate the format of the array
+
+reshape allows you to change the shape of an array
+  arr.reshape((6, 6)) <-- converts the array to 6 rows and 6 columns
+
+  you can call the shape of a reshape
+    arr.reshape((6, 6)).shape
+
+  you can split an array into multiple arrays by adding a third command
+    arr.reshape((3, 3, -1))
+      ^^^ -1 removes the last row in the array so there are no trailing values
+
+a numpy array is mutuable but you cannot reshape the array
+    using the reshape command creates a new object in memory
+
+can perform arithmetics on an array
+    arr * 3 <---- multiples all values by 3
