@@ -15,4 +15,11 @@ NumPy is a library that needs to be imported
 import numpy as np
   assigns np as a variable -- shorthand
 
-using from numpy import * imports everything and can overwrite the built in functions
+using from numpy import * imports everything and can overwrite the built in function
+
+arange generates a range array instead of a list
+  np.arange(100000) <-- range of values up to 100,000
+
+  when dealing with large ranges of values, an array will be more performant than a range
+
+  np.sum(ARRAY) is faster than sum(LIST)
