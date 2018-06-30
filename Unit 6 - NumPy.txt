@@ -108,3 +108,17 @@ Boolean Indexing
 you can test individual items in an array
 
     arr[arr % 2 == 0]
+
+
+
+
+--------------------------------
+--------------------------------
+Lesson 3
+Perform Linear Algebra Operations with NumPy
+--------------------------------
+--------------------------------
+you can perform scalar addition and multiple on vectors
+    leverage the typical commands (* and +)
+
+NumPy leverages .dot() for elementwise operations
