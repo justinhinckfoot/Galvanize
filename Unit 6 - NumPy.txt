@@ -92,3 +92,19 @@ you can perform arithmetic on a single value or a slice in an array
 
 you can replace a slice entirely, as long as it's the same size
     you can change values in an array but you cannot change the size of an array
+
+
+
+
+--------------------------------
+--------------------------------
+Lesson 2
+Use Boolean Indexing to Inspect and Modify NumPy Arrays
+--------------------------------
+--------------------------------
+#########################
+Boolean Indexing
+#########################
+you can test individual items in an array
+
+    arr[arr % 2 == 0]
