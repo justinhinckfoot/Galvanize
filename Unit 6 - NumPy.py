@@ -163,3 +163,75 @@ def mat_addition(A, B):
         return False
     else:
         return arrayA + arrayB
+
+# Question 3 - NumPy Checkpoint 3
+
+# A common operation in linear algebra is to calculate the inner product
+# for a given matrix X
+
+# Provided Code
+
+import numpy as np
+
+def xtx_product(X):
+    """
+    Given a matrix X, calculate the inner product X^T X, where the ^T
+    operator denotes the transpose.
+
+    Parameters
+    ----------
+    X: NumPy array size of (n, m)
+
+    Returns
+    -------
+    NumPy Array of size (m, m)
+    """
+    pass
+
+# Submitted Code
+
+
+
+
+# Question 4 - NumPy Checkpoint 4
+
+# Use NumPy to return the rank of a matrix
+
+# Provided Code
+
+import numpy as np
+
+def mat_rank(X):
+    """
+    Given a matrix X, return its rank.
+
+    Parameters
+    ----------
+    X: NumPy array size of (n, m)
+
+    Returns
+    -------
+    (int) the rank of X
+    """
+    pass
+
+# Submitted Code
+
+import numpy as np
+
+def mat_rank(X):
+    """
+    Given a matrix X, return its rank.
+
+    Parameters
+    ----------
+    X: NumPy array size of (n, m)
+
+    Returns
+    -------
+    (int) the rank of X
+    """
+
+    arrayX = np.array(X)
+
+    return np.linalg.matrix_rank(arrayX)
