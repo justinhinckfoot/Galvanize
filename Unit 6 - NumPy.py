@@ -60,4 +60,55 @@
 
         output = list[list > py.mean(list)]
 
-        return output        
+        return output
+
+# Lesson 3 --
+
+
+# Exercise 1 -- Checkpoint
+
+# Question 1 -- NumPy Checkpoint Q1
+
+# Use boolean indexing to return the elements of an array that are greater
+# than or equal to two times the minimum element of the array
+
+# Provided Code
+
+import numpy as np
+
+def elements_twice_min(arr):
+    """
+    Return all elements of array arr that are greater than or equal to 2 times
+    the minimum element of arr.
+
+    Parameters
+    ----------
+    arr: NumPy array (n, m)
+
+    Returns
+    -------
+    NumPy Array, a vector of size between: 0 and (n * m) - 1
+    """
+    pass
+
+# Submitted Code
+import numpy as np
+
+def elements_twice_min(arr):
+    """
+    Return all elements of array arr that are greater than or equal to 2 times
+    the minimum element of arr.
+
+    Parameters
+    ----------
+    arr: NumPy array (n, m)
+
+    Returns
+    -------
+    NumPy Array, a vector of size between: 0 and (n * m) - 1
+    """
+    list = np.array(arr)
+
+    output = list[list >= (np.min(list) * 2)]
+
+    return output
