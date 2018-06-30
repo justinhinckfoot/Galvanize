@@ -112,3 +112,54 @@ def elements_twice_min(arr):
     output = list[list >= (np.min(list) * 2)]
 
     return output
+
+# Question 2 - NumPy Checkpoint Q2
+
+# Add two NumPy vectors or matrices together, if possible.
+# If it is not possible to add the two vectors (due to size differences) return False
+
+# Provided Code
+
+import numpy as np
+
+def mat_addition(A, B):
+    """
+    Add vector/matrix arrays A and B together. If they cannot be added
+    return False.
+
+    Parameters
+    ----------
+    A: NumPy array size of (n,) or (n, m)
+    B: NumPy array size of (p,) or (p, q)
+
+    Returns
+    -------
+    NumPy Array of same size as A and B, or False if their sizes differ.
+    """
+    pass
+
+# Submitted Code
+
+import numpy as np
+
+def mat_addition(A, B):
+    """
+    Add vector/matrix arrays A and B together. If they cannot be added
+    return False.
+
+    Parameters
+    ----------
+    A: NumPy array size of (n,) or (n, m)
+    B: NumPy array size of (p,) or (p, q)
+
+    Returns
+    -------
+    NumPy Array of same size as A and B, or False if their sizes differ.
+    """
+    arrayA = np.array(A)
+    arrayB = np.array(B)
+
+    if np.size(A) != np.size(B):
+        return False
+    else:
+        return arrayA + arrayB
