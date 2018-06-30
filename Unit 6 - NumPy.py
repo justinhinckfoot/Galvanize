@@ -64,6 +64,64 @@
 
 # Lesson 3 --
 
+# Fill in the following function, which computes the dot products
+# of two equally spaced arrays.
+# There is a built-in function np.dot for doing this,
+# but try not to use it! Instead, see if you can build the dot
+# product out of simpler components like np.sum
+
+# Provided Code
+
+import numpy as np
+
+
+def dot_product(a, b):
+    '''
+    Return the dot product of two numpy arrays of the same length.
+
+    Parameters
+    ----------
+    a: numpy array with shape (n, )
+        An array of floating point numbers.
+    b: numpy array with shape (n, )
+        An array of floating point numbers.
+
+    Returns
+    -------
+    dot_prod: float
+        The dot product of a and b.
+    '''
+    pass
+
+# Submitted Code
+
+import numpy as np
+
+
+def dot_product(a, b):
+    '''
+    Return the dot product of two numpy arrays of the same length.
+
+    Parameters
+    ----------
+    a: numpy array with shape (n, )
+        An array of floating point numbers.
+    b: numpy array with shape (n, )
+        An array of floating point numbers.
+
+    Returns
+    -------
+    dot_prod: float
+        The dot product of a and b.
+    '''
+    arrayA = np.array(a)
+    arrayB = np.array(b)
+
+    return np.sum(arrayA * arrayB)
+
+    return np.dot(arrayA, arrayB)
+
+
 
 # Exercise 1 -- Checkpoint
 
@@ -190,7 +248,25 @@ def xtx_product(X):
 
 # Submitted Code
 
+import numpy as np
 
+def xtx_product(a, b):
+    """
+    Given a matrix X, calculate the inner product X^T X, where the ^T
+    operator denotes the transpose.
+
+    Parameters
+    ----------
+    X: NumPy array size of (n, m)
+
+    Returns
+    -------
+    NumPy Array of size (m, m)
+    """
+    arrayA = np.array(a)
+    arrayB = np.array(b)
+
+    return np.inner(arrayA, arrayB)
 
 
 # Question 4 - NumPy Checkpoint 4
