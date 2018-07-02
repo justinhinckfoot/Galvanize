@@ -120,3 +120,10 @@
     maxZ, minZ = Z.max(), Z.min()
     Z = (Z - minZ) / (maxZ - minZ)
     print(Z)
+
+# Exercise 21
+    # Create a custom dtype that describes a color as four unassigned bytes (RGBA)
+    color = np.dtype([("r", np.ubyte, 1]),
+                        ("g", np.ubyte, 1),
+                        ("b", np.byte, 1),
+                        ("a", np.byte, 1)])
