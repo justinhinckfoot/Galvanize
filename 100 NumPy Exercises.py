@@ -32,3 +32,13 @@
     Z = np.zeros(10)
     Z[4]=1
     print(Z)
+
+# Exercise 6
+    # Create a vector with values ranging from 10 to 49
+    Z = np.arange(10, 50)
+    print(Z)
+
+# Exercise 7
+    # Reverse a vector (first element becomes last)
+    Z = np.arange(0,10)
+    Z[::-1]
