@@ -42,3 +42,13 @@
     # Reverse a vector (first element becomes last)
     Z = np.arange(0,10)
     Z[::-1]
+
+# Exercise 8
+    # Create a 3 x 3 matrix with values ranging from 0 to 8
+    Z = np.arange(9)
+    Z.reshape(3,3)
+
+        # or
+
+    Z = np.arange(9).reshape(3,3)
+    print(Z)
