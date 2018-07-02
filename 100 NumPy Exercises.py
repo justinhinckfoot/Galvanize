@@ -68,3 +68,9 @@
     # Create a 3 x 3 x 3 array with random values
     Z = np.random.rand(3,3,3)
     print(Z)
+
+# Exercise 12
+    # Create a 10 x 10 array with random values
+        # and find the minimum and maximum values
+    Z = np.random.rand(10,10)
+    print(np.amin(Z),np.amax(Z))

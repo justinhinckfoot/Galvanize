@@ -46,3 +46,12 @@ numpy.random.ran() -- generates a random array of values
 numpy.random.rand(d0, d1, ..., dn)
     d0, d1, ..., dn: int, optional -- specify the dimensions of the returned array
 ---------------------------------------------------------------------
+
+
+
+
+---------------------------------------------------------------------
+Returning the Minimuma and/or Maximum Values from an Array
+numpy.amin(ARRAY) -- returns the minimum value from an array
+numpy.amax(ARRAY) -- returns the maximum value from an array 
+---------------------------------------------------------------------
