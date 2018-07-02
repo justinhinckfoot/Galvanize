@@ -138,3 +138,9 @@
     Z = arange(11)
     Z[(Z > 3) & (Z < 8)] *= -1
     print(Z)
+
+# Exercise 24
+    # What is the output of the following script?
+    print(sum(range(5),-1))
+    from numpy import *
+    print(sum(range(5),-1))
