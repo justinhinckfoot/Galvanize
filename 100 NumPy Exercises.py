@@ -175,3 +175,9 @@
     print(np.ceil(Z)-1)
     print(Z.astype(int))
     print(np.trunc(Z))
+
+# Question 29
+    # Create a 5 x 5 matrix with row values ranging from 0 to 4
+    Z = np.zeros((5,5))
+    Z += np.arange(5)
+    print(Z)
