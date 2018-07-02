@@ -153,3 +153,10 @@
     1j * Z XXXXXXXXXXXXXXXXXXXX
     Z / 1 / 1 XXXXXXXXXXXXXXXXXXXX
     Z <Z> Z
+
+# Question 26
+    # What are the results of the following expressions?
+    np.array(0) // np.array(0) -- an integer
+    np.array(0) // np.aray(0.) -- a floating point number
+    np.array(0) / np.array(0) -- a floating point number 
+    np.array(0) / np.array(0.) -- a floating point number
