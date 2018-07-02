@@ -84,3 +84,16 @@
     # Create a 2D array with 1 on the border and 0 inside
     Z = np.ones((10,10))
     Z[1:-1,1:-1] = 0
+
+# Exercise 15
+    # What is the result of the following expression?
+    0 * np.nan
+    np.nan == np.nan
+    np.inf > np.nan
+    np.nan - np.nan
+    0.3 == 3 * 0.1
+
+# Exercise 16
+    # Create a 5 x 5 matrix with values 1,2,3,4 just below the diagonal
+    Z = np.diag(1+np.arange(4),k=-1)
+    print(Z)
