@@ -79,3 +79,18 @@ numpy.nan() -- converts the designated value to a floating point number
 numpy.nan(x)
     x: str, int -- converts to a floating point number
 ---------------------------------------------------------------------
+
+
+
+
+
+---------------------------------------------------------------------
+Extract or Create a Diagonal Array
+numpy.diag() -- extracta diagonal or constructs a diagonal array
+
+numpy.diag(v, k=0)
+    v: array_like
+    k: int, optional -- diagonal in question
+        - use k > 0 for diagonals above the main diagonal
+        - use k < 0 for diagonals below the main diagonal
+---------------------------------------------------------------------
