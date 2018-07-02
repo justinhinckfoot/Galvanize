@@ -159,3 +159,17 @@ numpy.random.uniform(low, high, size)
         default value is 1.0
     size: int or tuple of ints, operations -- output shape
 ---------------------------------------------------------------------
+
+
+
+
+
+---------------------------------------------------------------------
+How to Round Down to Zero vs. Up
+numpy.trunc() -- returns the truncated value of the input, element-wise
+
+the truncated value of the scalar is the nearest integer i which is closer to zero than x is
+
+numpy.trunc(x)
+    x: array_like -- the data to truncate
+---------------------------------------------------------------------
