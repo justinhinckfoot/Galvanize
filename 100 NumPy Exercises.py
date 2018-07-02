@@ -132,3 +132,9 @@
     # Multiply a 5 x 3 matrix by a 3 x 2 matrix (real matrix product)
     Z = np.dot(np.one((5,3)), np.ones((3,2)))
     print(Z)
+
+# Exercise 23
+    # Given a 1D array, negate all elements which are between 3 and 8, in place
+    Z = arange(11)
+    Z[(Z > 3) & (Z < 8)] *= -1
+    print(Z)
