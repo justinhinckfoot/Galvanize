@@ -100,7 +100,7 @@ numpy.diag(v, k=0)
 
 
 ---------------------------------------------------------------------
-Converting an Index to a Tuple of Coordinates (Index Unraveling)
+Converting an Index to a Tuple of Coordinates (Index Unravelingw)
 numpy.unravel_index() -- converts a flat index or array of flat indices into
     a tuple of coordinate arrays
 
@@ -110,4 +110,17 @@ numpy.unravel_index(indices, dims, order='C')
     dims: tuple of ints -- the shape of the array to use for unraveling
     order: {'C','F'}, optional -- determines whether the indices should
           be viewed as indexing in row-major (C-style) or column-major (Fortran-style)
+---------------------------------------------------------------------
+
+
+
+
+
+---------------------------------------------------------------------
+The Tile FUNCTION
+numpy.tile() -- construct an array by repeating A the number of times given by reps
+
+numpy.tile(A, reps)
+    A: array_like -- the input array
+    reps: array_like -- the number of repetitions of A along each axis
 ---------------------------------------------------------------------
