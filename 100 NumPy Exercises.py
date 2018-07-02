@@ -113,3 +113,10 @@
     # Create a checkerboard 8 x 8 matrix using the tile function
     Z = np.tile(np.array([[0,1],[1,0]),(4,4))
     print(Z)
+
+# Exercise 20
+    # Normalize a 5 x 5 random matrix
+    Z = np.random.random((5,5))
+    maxZ, minZ = Z.max(), Z.min()
+    Z = (Z - minZ) / (maxZ - minZ)
+    print(Z)
