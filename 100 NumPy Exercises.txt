@@ -51,7 +51,20 @@ numpy.random.rand(d0, d1, ..., dn)
 
 
 ---------------------------------------------------------------------
-Returning the Minimuma and/or Maximum Values from an Array
+Returning the Minimum and/or Maximum Values from an Array
 numpy.amin(ARRAY) -- returns the minimum value from an array
 numpy.amax(ARRAY) -- returns the maximum value from an array
+---------------------------------------------------------------------
+
+
+
+
+---------------------------------------------------------------------
+Create a random vector of size X
+numpy.random.randint() -- returns a random array
+
+numpy.random.randint(l, h, s)
+    l: int -- lowest signed integer to be drawn from in the distribution
+    h: int, optional -- if provided, the highest integer to be drawn from in the distribution
+    s: int, optional -- specifies the size of the returned array
 ---------------------------------------------------------------------
