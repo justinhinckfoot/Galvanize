@@ -173,3 +173,17 @@ the truncated value of the scalar is the nearest integer i which is closer to ze
 numpy.trunc(x)
     x: array_like -- the data to truncate
 ---------------------------------------------------------------------
+
+
+
+
+
+---------------------------------------------------------------------
+How to Copy the Sign from One Element to Another
+numpy.copysign() -- changes the sign of x1 and applies it to x2, element-wise
+
+numpy.copysign(x1, x2)
+    x1: array_like -- values to change the sign of
+    x2: array_like -- the sign of each element that is applied to the respective
+          element under x1
+---------------------------------------------------------------------
