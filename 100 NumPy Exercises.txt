@@ -124,3 +124,20 @@ numpy.tile(A, reps)
     A: array_like -- the input array
     reps: array_like -- the number of repetitions of A along each axis
 ---------------------------------------------------------------------
+
+
+
+
+
+---------------------------------------------------------------------
+Creating Custom Data Types
+A data type object (numpy.dtype) describes how the bytes in the fixed-size block
+of memory corresponding to an array item should be interpreted
+
+It describes the following aspects of the data:
+  1. Type of data
+  2. Size of the data
+  3. Byte order of the data
+  4. If the data type is structured, an aggregate of other data types
+  5. If the data type is a sub-array, what is its shape and data type
+---------------------------------------------------------------------
