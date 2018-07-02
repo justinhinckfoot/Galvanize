@@ -47,9 +47,7 @@
     # Create a 3 x 3 matrix with values ranging from 0 to 8
     Z = np.arange(9)
     Z.reshape(3,3)
-
         # or
-
     Z = np.arange(9).reshape(3,3)
     print(Z)
 
@@ -62,8 +60,11 @@
     # Create a 3 x 3 identity matrix
     Z  = np.identity(3)
     print(Z)
-
         # or
-
     Z = np.eye(3)
+    print(Z)
+
+# Exercise 11
+    # Create a 3 x 3 x 3 array with random values
+    Z = np.random.rand(3,3,3)
     print(Z)
