@@ -57,3 +57,13 @@
     # Find indices of non-zero elements from [1,2,0,0,4,0]
     nz = np.nonzero([1,2,0,0,4,0])
     print(nz)
+
+# Exercise 10
+    # Create a 3 x 3 identity matrix
+    Z  = np.identity(3)
+    print(Z)
+
+        # or
+
+    Z = np.eye(3)
+    print(Z)
