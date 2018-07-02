@@ -21,3 +21,8 @@
     # Create a null vector of size 10
     Z = np.zeros(10)
     print(Z)
+
+# Exercise 4
+    # How to get the documentation of the numpy add function
+    # from the command line
+    python -c "import numpy; numpy.info(numpy.add)"
