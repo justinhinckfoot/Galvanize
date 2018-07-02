@@ -165,3 +165,13 @@
     # How to round away from zero in a float array?
     Z = np.random.uniform(-10,+10,10)
     print(np.trunc(Z + np.copysign(0.5,Z)))
+
+# Question 28
+    # Extract the integer part of a random array using 5 different methods
+    Z = np.random.uniform(0,10,10)
+
+    print(Z - Z%1)
+    print(np.floor(Z))
+    print(np.ceil(Z)-1)
+    print(Z.astype(int))
+    print(np.trunc(Z))
