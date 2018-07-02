@@ -53,5 +53,5 @@ numpy.random.rand(d0, d1, ..., dn)
 ---------------------------------------------------------------------
 Returning the Minimuma and/or Maximum Values from an Array
 numpy.amin(ARRAY) -- returns the minimum value from an array
-numpy.amax(ARRAY) -- returns the maximum value from an array 
+numpy.amax(ARRAY) -- returns the maximum value from an array
 ---------------------------------------------------------------------
