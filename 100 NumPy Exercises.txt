@@ -24,3 +24,15 @@ To return the index of non-zero values in an array
 
 nonzero -- return the indices of the elements that are non-zero
 ---------------------------------------------------------------------
+
+
+
+---------------------------------------------------------------------
+Identity Array
+numpy.identity() -- returns the identity array
+    the identity array is a square array with ones on the main diagonal
+
+numpy.identity(n, dtype=None)
+    n: int -- number of rows (and columns)
+    dtype: data-type, optional -- data-type of the output
+---------------------------------------------------------------------
