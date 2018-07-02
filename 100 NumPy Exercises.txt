@@ -14,3 +14,13 @@ To reverse a NumPy array, leveraging the indexing
     Z = np.arange(10)
     Z[::-1]
 ---------------------------------------------------------------------
+
+
+
+---------------------------------------------------------------------
+To return the index of non-zero values in an array
+    nz = np.nonzero([1,2,0,0,4,0])
+    print(nz)
+
+nonzero -- return the indices of the elements that are non-zero
+---------------------------------------------------------------------
