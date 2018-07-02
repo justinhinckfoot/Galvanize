@@ -74,3 +74,8 @@
         # and find the minimum and maximum values
     Z = np.random.rand(10,10)
     print(np.amin(Z),np.amax(Z))
+
+# Exercise 13
+    # Create a random vector of size 30 and find the mean value
+    Z = np.random.randint(0,100,30).mean()
+    print(Z)
