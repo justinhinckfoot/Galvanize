@@ -97,3 +97,10 @@
     # Create a 5 x 5 matrix with values 1,2,3,4 just below the diagonal
     Z = np.diag(1+np.arange(4),k=-1)
     print(Z)
+
+# Exercise 17
+    # Create an 8 x 8 matrix and fill it with a checkboard pattern
+    Z = np.zeros((8,8),dtype=int)
+    Z[1::2,::2] = 1
+    Z[::2,1::2] = 1
+    print(Z)
