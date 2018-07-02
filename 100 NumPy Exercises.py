@@ -108,3 +108,8 @@
 # Exercise 18
     # Consider a (6,7,8) shape array, what is the index (x,y,z) of the 100th element
     np.unravel_index(100, (6,7,8))
+
+# Exercise 19
+    # Create a checkerboard 8 x 8 matrix using the tile function
+    Z = np.tile(np.array([[0,1],[1,0]),(4,4))
+    print(Z)
