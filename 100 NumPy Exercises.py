@@ -158,5 +158,10 @@
     # What are the results of the following expressions?
     np.array(0) // np.array(0) -- an integer
     np.array(0) // np.aray(0.) -- a floating point number
-    np.array(0) / np.array(0) -- a floating point number 
+    np.array(0) / np.array(0) -- a floating point number
     np.array(0) / np.array(0.) -- a floating point number
+
+# Question 27
+    # How to round away from zero in a float array?
+    Z = np.random.uniform(-10,+10,10)
+    print(np.trunc(Z + np.copysign(0.5,Z)))
