@@ -16,4 +16,8 @@
     # Print the NumPy version and the configuration
     print(np.__version__)
     np.show_config()
-    
+
+# Exercise 3
+    # Create a null vector of size 10
+    Z = np.zeros(10)
+    print(Z)
