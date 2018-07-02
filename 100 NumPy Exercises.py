@@ -79,3 +79,8 @@
     # Create a random vector of size 30 and find the mean value
     Z = np.random.randint(0,100,30).mean()
     print(Z)
+
+# Exercise 14
+    # Create a 2D array with 1 on the border and 0 inside
+    Z = np.ones((10,10))
+    Z[1:-1,1:-1] = 0
