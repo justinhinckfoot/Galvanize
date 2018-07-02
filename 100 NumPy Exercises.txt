@@ -1,0 +1,8 @@
+############################
+100 NumPy Exercises Notes
+############################
+
+----------------------------
+To can view a function's docstring text from the command line
+    python -c "import numpy; numpy.info(numpy.FUNCTION)"
+----------------------------
