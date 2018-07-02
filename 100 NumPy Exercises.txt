@@ -36,3 +36,13 @@ numpy.identity(n, dtype=None)
     n: int -- number of rows (and columns)
     dtype: data-type, optional -- data-type of the output
 ---------------------------------------------------------------------
+
+
+
+---------------------------------------------------------------------
+Random Array
+numpy.random.ran() -- generates a random array of values
+
+numpy.random.rand(d0, d1, ..., dn)
+    d0, d1, ..., dn: int, optional -- specify the dimensions of the returned array
+---------------------------------------------------------------------
