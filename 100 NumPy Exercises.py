@@ -144,3 +144,12 @@
     print(sum(range(5),-1))
     from numpy import *
     print(sum(range(5),-1))
+
+# Exercise 25
+    # Consider an integer vector Z, which of these expressions are legal?
+    Z ** Z XXXXXXXXXXXXXXXXXXXX
+    2 << Z >> 2 XXXXXXXXXXXXXXXXXXXX
+    Z <- Z XXXXXXXXXXXXXXXXXXXX
+    1j * Z XXXXXXXXXXXXXXXXXXXX
+    Z / 1 / 1 XXXXXXXXXXXXXXXXXXXX
+    Z <Z> Z
