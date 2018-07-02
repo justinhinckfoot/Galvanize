@@ -127,3 +127,8 @@
                         ("g", np.ubyte, 1),
                         ("b", np.byte, 1),
                         ("a", np.byte, 1)])
+
+# Exercise 22
+    # Multiply a 5 x 3 matrix by a 3 x 2 matrix (real matrix product)
+    Z = np.dot(np.one((5,3)), np.ones((3,2)))
+    print(Z)
