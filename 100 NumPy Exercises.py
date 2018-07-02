@@ -52,3 +52,8 @@
 
     Z = np.arange(9).reshape(3,3)
     print(Z)
+
+# Exercise 9
+    # Find indices of non-zero elements from [1,2,0,0,4,0]
+    nz = np.nonzero([1,2,0,0,4,0])
+    print(nz)
