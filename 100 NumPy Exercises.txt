@@ -187,3 +187,57 @@ numpy.copysign(x1, x2)
     x2: array_like -- the sign of each element that is applied to the respective
           element under x1
 ---------------------------------------------------------------------
+
+
+
+
+
+---------------------------------------------------------------------
+Floor Function
+numpy.floor() -- returns the floor of the input, element-wise
+
+numpy.floor(x):
+    x: array_like -- an array of input data
+
+Examples
+a = np.array([-1.7, -1.5, -0.2, 0.2, 1.5, 1.7, 2.0])
+np.floor(a)
+array([-2., -2., -1., 0., 1., 1., 2.])
+---------------------------------------------------------------------
+
+
+
+
+
+---------------------------------------------------------------------
+Ceiling Function
+numpy.ceil() -- returns the ceiling of the input, element-wise
+
+numpy.ceil(x):
+    x: array_like -- an array of input data
+
+Examples
+a = np.array([-1.7, -1.5, -0.2, 0.2, 1.5, 1.7, 2.0])
+np.ceil(a)
+array([-1., -1., -0., 1., 2., 2., 2.])
+---------------------------------------------------------------------
+
+
+
+
+
+
+---------------------------------------------------------------------
+Trunc Function
+numpy.trunc() -- returns the truncated value of the input, element-wise
+
+the truncated value of the scalar is the nearest integer which is closer to zero than the scalar
+
+numpy.trunc(x)
+    x: array_like -- input data to truncate
+
+Examples
+a = np.array([-1.7, -1.5, -0.2, 0.2, 1.5, 1.7, 2.0])
+np.trunc(a)
+array([-1., -1., -0., 1., 1., 1., 2.])
+---------------------------------------------------------------------
