@@ -26,3 +26,9 @@
     # How to get the documentation of the numpy add function
     # from the command line
     python -c "import numpy; numpy.info(numpy.add)"
+
+# Exercise 5
+    # Create a null vector of size 10 but the fifth value which is 1
+    Z = np.zeros(10)
+    Z[4]=1
+    print(Z)
