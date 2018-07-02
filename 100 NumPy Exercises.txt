@@ -94,3 +94,20 @@ numpy.diag(v, k=0)
         - use k > 0 for diagonals above the main diagonal
         - use k < 0 for diagonals below the main diagonal
 ---------------------------------------------------------------------
+
+
+
+
+
+---------------------------------------------------------------------
+Converting an Index to a Tuple of Coordinates (Index Unraveling)
+numpy.unravel_index() -- converts a flat index or array of flat indices into
+    a tuple of coordinate arrays
+
+numpy.unravel_index(indices, dims, order='C')
+    indices: array_like -- an integer array whose elements are indices into
+          the flattened version of an array of dimensions
+    dims: tuple of ints -- the shape of the array to use for unraveling
+    order: {'C','F'}, optional -- determines whether the indices should
+          be viewed as indexing in row-major (C-style) or column-major (Fortran-style)
+---------------------------------------------------------------------
