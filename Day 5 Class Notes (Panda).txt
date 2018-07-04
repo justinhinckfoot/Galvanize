@@ -25,3 +25,39 @@ can save a data frame as a variable
 
 can return the data types of the data frame variable with the .dtypes function
     df.dtypes
+
+
+
+
+--------------------------------------
+--------------------------------------
+DataFrame Methods
+
+df.columns -- yields all of the column names in the dataframe
+
+df.index -- yields the range of indexes, or range of rows in a dataframe
+
+can define strings for the index as opposed to the numerical values
+
+could pull a unique value from a column to use as the index for a row
+    would leverage df.set_index("COLUMN NAME")
+    this method creates a new data frame that is stored in memory
+        would need to use the inplace option to redefine the variable
+
+can slice and index pandas in similar ways to lists and arrays
+    df['citric acid'] -- returns all values from the citric acid column
+
+can use stats on a series object
+    df.min()
+    df.max()
+    df.mean()
+    df.std()
+    df.sem()
+
+df.describe() -- provides a summary of the object
+    includes count, mean, std, min, percentiles, and max
+
+can return values from a series object via indexing
+    ca.describe()['min'] -- returns the value associated with the min key
+--------------------------------------
+--------------------------------------
