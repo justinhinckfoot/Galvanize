@@ -1,0 +1,27 @@
+##############################
+##############################
+Day 5 Class Notes
+Pandas
+##############################
+##############################
+
+import pandas as pd
+    ^^^ standard, just as numpy is aliased as np
+
+building dataframes in pandas
+pd.DataFrame()
+pd.DataFrame([{'a': 1, 'b': 2, 'c': 3}
+            ,{'a': 4, 'b': 5, 'c': 6, 'd': 7}])
+
+numpy is included in the pandas package
+    can leverage the np alias without explicitly importing numpy
+
+%ls data -- returns all data files within the current working directory
+
+can specify the delimiter in the pd.read_csv() function
+    pd.read_csv(FILE, delimiter=';')
+
+can save a data frame as a variable
+
+can return the data types of the data frame variable with the .dtypes function
+    df.dtypes
