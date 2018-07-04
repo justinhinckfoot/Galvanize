@@ -241,3 +241,20 @@ a = np.array([-1.7, -1.5, -0.2, 0.2, 1.5, 1.7, 2.0])
 np.trunc(a)
 array([-1., -1., -0., 1., 1., 1., 2.])
 ---------------------------------------------------------------------
+
+
+
+
+
+
+
+---------------------------------------------------------------------
+From Iterable Function
+numpy.fromiter() -- creates a 1-dimensional array from an iterable object
+
+numpy.fromiter(iterable, dtype, count = -1)
+    iterable: iterable object -- an iterable object providing data for the array
+    dtype: data-type -- the data-type of the returned array
+    count: int, optional -- the number of items to read from iterable
+        -1 = returns all data
+---------------------------------------------------------------------
