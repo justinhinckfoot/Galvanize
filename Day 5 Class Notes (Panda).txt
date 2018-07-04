@@ -59,5 +59,39 @@ df.describe() -- provides a summary of the object
 
 can return values from a series object via indexing
     ca.describe()['min'] -- returns the value associated with the min key
+
+df.head() -- returns the top 5 rows
+df.tail() -- returns the bottom 5 rows
+    can pass a value into either function to return X rows
+
+can obtain a dataframe with certain columns
+    df[['citric acid', 'chlorides', 'density']]
+
+can sub-select a row and view it as a series object
+    df.loc[1591] --  returns a series object for the row id 1591
+    returns all columns and their related value
+    if there are multiple data types, the return is casted into the lowest common demoninator
+        the data type would then be an object
+
+can avoid converting an index of a single row to a series by asking for a range of 1 value
+    the output would then be a new dataframe
+    df.loc[1591:1591]
+
+df.dropna() -- drops all rows that have an NA value in any column
+
+df.fillna() -- replaces the NA value with a specified value
+    df.fillna(-1) -- replaces NA with -1
+
+can built a function that is passed to a dataframe to alter the values
+    df.apply(FUNCTION, axis=AXISNUMBER)
+
+import gc
+gc.collect()
+    ^^^^ cleans up the rows that do not have a reference associated with them
+
+can call describe on the entire data frame to get a summary of each column
+    can slice the values within the describe() method
+
+label based slicing  
 --------------------------------------
 --------------------------------------
