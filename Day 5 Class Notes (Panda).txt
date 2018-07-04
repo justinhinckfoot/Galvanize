@@ -92,6 +92,17 @@ gc.collect()
 can call describe on the entire data frame to get a summary of each column
     can slice the values within the describe() method
 
-label based slicing  
+label based slicing
+
+dataframes are mutable data structures
+
+can leverage the replace() function to correct column headers that have spaces
+    best practice to have column headers without spaces
+
+can select specific rows within columns
+    df.loc[6, 'chlorides'] -- returns the element in row #6 in the chlorides column
+
+can easily add a column to a dataframe
+    df['NEW COLUMN NAME'] = OPERATION TO PERFORM TO SET VALUE
 --------------------------------------
 --------------------------------------
