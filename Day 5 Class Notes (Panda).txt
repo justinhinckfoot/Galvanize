@@ -106,3 +106,20 @@ can easily add a column to a dataframe
     df['NEW COLUMN NAME'] = OPERATION TO PERFORM TO SET VALUE
 --------------------------------------
 --------------------------------------
+
+
+
+
+
+
+--------------------------------------
+--------------------------------------
+Group By Statements
+
+use .unique() to obtain a list of the unique values within a column
+    df['quality'].unique()
+
+can perform operations on groupby statements
+    df.groupby('quality').mean() -- returns the mean values of each column grouped together by the quality column
+--------------------------------------
+--------------------------------------
