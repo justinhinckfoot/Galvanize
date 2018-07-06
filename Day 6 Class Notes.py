@@ -31,3 +31,11 @@ df.describe().loc[['mean','min']]
             return pd.read_sql(q, conn)
     # Individual columns can be returned
         query("SELECT family FROM person")
+    # Can select distinct values only
+        query("SELECT DISTINCT taken, quant FROM survey")
+        # indicating two values after DISINTCT returns distinct pairs
+    # Leverage ORDER BY to sort values
+        query("SELECT 'values' FROM 'table' ORDER BY 'field' 'ASC/DESC'")
+        query("SELECT * FROM person ORDER BY family DESC")
+        # Can nest sort values
+            query("SELECT 'values' FROM 'table' ORDER BY 'field' 'ASC/DESC', 'field2' 'ASC/DESC'")
