@@ -26,3 +26,8 @@ df.describe().loc[['mean','min']]
             print(name[0])
         "OR"
         conn.execute("SELECT name FROM sqlist_master WHERE type='table';)
+    # Creating a function can expedite things if running queries often
+        def query(q):
+            return pd.read_sql(q, conn)
+    # Individual columns can be returned
+        query("SELECT family FROM person")
