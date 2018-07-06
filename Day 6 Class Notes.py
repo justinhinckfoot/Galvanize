@@ -39,3 +39,9 @@ df.describe().loc[['mean','min']]
         query("SELECT * FROM person ORDER BY family DESC")
         # Can nest sort values
             query("SELECT 'values' FROM 'table' ORDER BY 'field' 'ASC/DESC', 'field2' 'ASC/DESC'")
+    # Leverage the WHERE clause to add filtering
+        SELECT value(s) FROM table WHERE column=criteria
+        query("SELECT * FROM visited WHERE site='DR-1'")
+        # Use the IN statement where you're filtering for multiple values within the same column
+            SELECT values FROM table WHERE value IN ('itemA', 'itemB', ....)
+            query("SELECT * FROM survey WHERE person IN ('lake', 'roe')")
