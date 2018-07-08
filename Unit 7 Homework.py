@@ -99,3 +99,21 @@
     SELECT species FROM animals
         WHERE apperance LIKE 'f%'
     """
+
+# Lesson 4 -- Writing Aggregate Queries
+
+    # Question 1 -- SQL Q9
+    # Use an aggregate function to return the number of countries that became independent
+        # in the year 1918.
+
+    # Submitted Code
+    agg_1918 = '''
+    enter query here
+    '''
+
+    # Submitted Code
+    agg_1918 = '''
+    SELECT COUNT(DISTINCT name)
+        FROM country
+        WHERE indepyear = 1918;
+    '''
