@@ -71,3 +71,17 @@
     SELECT species FROM animals
         WHERE vertebrate_class IN ('mammal','amphibian')
     """
+
+    # Question 3 -- SQL 07
+    # Use BETWEEN to show species that have at least 1 leg, but no more than 3 legs
+
+    # Provided Code
+    three_between = '''
+    enter your query here
+    '''
+
+    # Submitted Code
+    three_between = """
+    SELECT species FROM animals
+        WHERE num_legs BETWEEN 1 AND 3
+    """
