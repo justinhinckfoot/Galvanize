@@ -50,6 +50,9 @@ sqlite3 can be initiated by typing sqlite3 into a terminal session
 
 navigate to the location you want to create a database in first
 
+touch DATABASE NAME.db -- creates an empty database
+sqlite3 DATABASE NAME.db -- connects to the database through SQLite
+
 .tables -- lists all tables that are in the current database
 .open FILENAME -- opens the indicated database file
 
@@ -102,4 +105,4 @@ Loading Data from a SQL File
 ----------------------------------------
 you can download a .sql file and load it into the database to easily populate tables
 
-.read SQL FILE NAME.SQL  
+.read SQL FILE NAME.SQL
