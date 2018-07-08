@@ -51,7 +51,7 @@ sqlite3 can be initiated by typing sqlite3 into a terminal session
 navigate to the location you want to create a database in first
 
 touch DATABASE NAME.db -- creates an empty database
-    this is done outside of sqlite3 
+    this is done outside of sqlite3
 sqlite3 DATABASE NAME.db -- connects to the database through SQLite
 
 .exit -- exits out of the program
@@ -109,3 +109,94 @@ Loading Data from a SQL File
 you can download a .sql file and load it into the database to easily populate tables
 
 .read SQL FILE NAME.SQL
+
+
+
+
+#########################################
+Lesson 3
+Writing Simple Queries
+#########################################
+
+----------------------------------------
+Selecting Columns from a Table
+----------------------------------------
+you can enter the names of the columns you'd like returned in the SELECT statement
+
+
+
+----------------------------------------
+Selecting Rows from a Table Using WHERE
+----------------------------------------
+adding a WHERE clause helps limits rows that return a TRUE value for the WHERE clause
+
+
+
+-- Equality and Inequality --
+all standard comparison operators can be used
+
+BETWEEN X AND Y -- can be used instead of a combination of >= and <=
+
+
+
+
+-- IN --
+IN(a, b, c, ...) -- can be used to specify a list of possible values
+
+
+
+
+-- Pattern Matching --
+to search for matching patterns in strings, use LIKE
+
+_ -- acts as a wildcard for a single character
+    SELECT name, state FROM customers
+      WHERE name LIKE 'Pe_';
+
+      returns all values that begin with 'Pe' and have a single character after
+
+% -- acts as a wildcard to any number of characters
+    SELECT name, state FROM customers
+      WHERE name LIKE 'P%';
+
+      returns all values that begin with a 'P'
+
+you can string together multiple _'s to allow for two wildcard characters
+    can also use a combination of _ and % in a single statement
+
+SELECT name, state FROM customers
+  WHERE name LIKE '__i%'
+
+  returns all values that have two characters before an 'i' and any number of characters
+      (or none at all) after the 'i'
+
+
+
+
+-- String Functions --
+strings can be manipulated -- this can be helpful for WHERE statements (lower case comparison)
+
+SELECT id, name FROM products
+  WHERE lower(name) LIKE '%razor%';
+
+can view the result of replace a value in a string with the REPLACE function
+
+SELECT REPLACE(name, 'n', 'x') FROM customers;
+
+    returns all values in the name column and replaces any 'n' values with an 'x'
+
+
+
+
+-- Order By --
+ORDER BY -- allows you to control how the columns in a table are sorted (or returned)
+
+SELECT id, name, state FROM customers
+  ORDER BY state;
+
+  returns all id, name, and state values ordered by state
+
+you can order by a column even if that column does not appear
+
+the default order is ascending (ASC) -- you can append DESC (descending) after the column
+    to sort in descending order (high to low)
