@@ -85,3 +85,17 @@
     SELECT species FROM animals
         WHERE num_legs BETWEEN 1 AND 3
     """
+
+    # Question 4 -- SQL 08
+    # Use LIKE to show species that have an appearance that starts with 'f'
+
+    # Provided Code
+    four_like = '''
+    enter query here
+    '''
+
+    # Submitted Code
+    four_like = """
+    SELECT species FROM animals
+        WHERE apperance LIKE 'f%'
+    """
