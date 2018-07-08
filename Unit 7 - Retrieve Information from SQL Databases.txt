@@ -200,3 +200,55 @@ you can order by a column even if that column does not appear
 
 the default order is ascending (ASC) -- you can append DESC (descending) after the column
     to sort in descending order (high to low)
+
+
+
+
+#########################################
+Lesson 4
+Writing Aggregate Queries
+#########################################
+
+----------------------------------------
+Loading the world Database
+----------------------------------------
+LIMIT X -- limits the SELECT statement to X number of values
+    helps for getting a sense of data structure when loading a new table
+
+PRAGMA table_info("TABLE NAME") -- provides information about each table
+
+
+
+
+----------------------------------------
+GROUP BY
+----------------------------------------
+GROUP BY -- helps to gather aggregate information by grouping by a certain value
+
+
+
+
+----------------------------------------
+Aggregate Functions
+----------------------------------------
+aggregating -- the process of grouping by one value and performing a numerical operation
+    on at least one other value
+
+
+
+
+----------------------------------------
+SELECT DISTINCT
+----------------------------------------
+SELECT DISTINCT is similar to GROUP BY
+
+SELECT DISTINCT -- returns all unique values of a given field
+
+SELECT DISTINCT is not meant to be used with aggregate functions
+
+SELECT DISTINCT is helpful to remove duplicates
+
+.width A B ... Z -- specifies the width of each column in a database
+    can be helpful if some columns have longer character lengths
+
+    
