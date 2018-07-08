@@ -51,7 +51,10 @@ sqlite3 can be initiated by typing sqlite3 into a terminal session
 navigate to the location you want to create a database in first
 
 touch DATABASE NAME.db -- creates an empty database
+    this is done outside of sqlite3 
 sqlite3 DATABASE NAME.db -- connects to the database through SQLite
+
+.exit -- exits out of the program
 
 .tables -- lists all tables that are in the current database
 .open FILENAME -- opens the indicated database file
