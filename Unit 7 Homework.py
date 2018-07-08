@@ -38,3 +38,20 @@
         # What is the value?
 
         # Answer -- 239
+
+# Lesson 3 - Writing Simple Queries
+
+    # Question 1 - SQL Q5
+    # Use the WHERE clause to show the appearance of rats.
+    # You should return your query as a string assigned to the variable one_where, as follows:
+
+    # Provided Code
+    one_where = '''
+    enter your query here
+    '''
+
+    # Submitted Code
+    one_where = """
+    SELECT apperance FROM animals
+        WHERE species = 'rat'
+    """
