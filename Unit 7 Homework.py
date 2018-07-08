@@ -55,3 +55,19 @@
     SELECT apperance FROM animals
         WHERE species = 'rat'
     """
+
+    # Question 2 -- SQL 06
+    # Use IN to show the species for animals with vertebrae_class 'mammal' and
+    # 'amphibian'
+    # Return your query as:
+
+    # Provided Code
+    two_in = '''
+    enter your query here
+    '''
+
+    # Submitted Code
+    two_in = """
+    SELECT species FROM animals
+        WHERE vertebrate_class IN ('mammal','amphibian')
+    """
