@@ -33,3 +33,73 @@ Modeling Relations with Primary and Foreign Keys
 Every row in a table must be unique -- the uniqueness is enforced by a primary key
 
 The id field doesn't need to be random or sequential -- you could use a combo of fields
+
+
+
+
+#########################################
+Lesson 2
+Populating a Database
+#########################################
+
+
+----------------------------------------
+Opening a Sqlite Session
+----------------------------------------
+sqlite3 can be initiated by typing sqlite3 into a terminal session
+
+navigate to the location you want to create a database in first
+
+.tables -- lists all tables that are in the current database
+.open FILENAME -- opens the indicated database file
+
+--General Syntax--
+CREATE TABLE "TABLE NAME" (
+    id INTEGER PRIMARY KEY,
+    "COLUMN NAME" "DATATYPE",
+    "REFERENCED COLUMN NAME" "DATATYPE" REFERENCES "REFERENCED TABLE(COLUMN)"
+    . . . );
+
+)
+
+
+
+----------------------------------------
+Manually Entering Data
+----------------------------------------
+you can enter any number of rows by using the command INSERT INTO tablename VALUES
+
+entering a value for an entire row will be placed in the column based on the order
+    the data is entered
+
+INSERT INTO tablename VALUES
+  (NUMBER, 'STRING', ... );
+
+
+.headers ON -- turns on column headers in the returned table
+.mode column -- separates the return table into columns
+
+-- Entering Incomplete Rows --
+if some of the values are missing, you need to specify the values you do have
+
+INSERT INTO tablename(columnA, columnC, ... )
+  (columnA value, columnC value, ... )
+
+to add multiple values at once, separate the rows with commas -- the final item ends with a semicolon
+
+if you add a value of the wrong data type, sqlite3 will convert it
+    if you enter a year into a string value, it will be converted to a string
+
+the safest way to remove a row is by its ID
+
+DELETE FROM "TABLE NAME"
+  WHERE id="VALUE TO DELETE"
+
+
+
+----------------------------------------
+Loading Data from a SQL File
+----------------------------------------
+you can download a .sql file and load it into the database to easily populate tables
+
+.read SQL FILE NAME.SQL  
