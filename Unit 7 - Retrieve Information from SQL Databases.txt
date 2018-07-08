@@ -1,0 +1,35 @@
+#########################################
+#########################################
+Unit 7 -- Retrieve Information from Structured Query Language (SQL) Databases
+#########################################
+#########################################
+
+
+
+#########################################
+Lesson 1
+Database Structure
+#########################################
+
+----------------------------------------
+The RDBMS Data Model
+----------------------------------------
+Relational databases allow you to track multiple, related sets of information
+  much more cleanly than with spreadsheets
+
+
+----------------------------------------
+Schemas
+----------------------------------------
+Schemas are the road maps that tell you how the data fits together
+
+
+
+
+
+----------------------------------------
+Modeling Relations with Primary and Foreign Keys
+----------------------------------------
+Every row in a table must be unique -- the uniqueness is enforced by a primary key
+
+The id field doesn't need to be random or sequential -- you could use a combo of fields
