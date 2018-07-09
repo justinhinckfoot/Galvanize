@@ -132,3 +132,20 @@
     SELECT AVG(population), name
         FROM country
         WHERE governmentform = 'Constitutional Monarchy';
+    '''
+
+    # Question 3 -- SQL11
+    # Write a query that returns each continent and the area of the largest country
+        # in that continent
+
+    # Provided Code
+    agg_areas = '''
+    enter query here
+    '''
+
+    # Submitted Code
+    agg_areas = '''
+    SELECT continent, MAX(surfacearea)
+        FROM country
+        GROUP BY continent;
+    '''
