@@ -307,7 +307,7 @@ you can specify multiple joins by defining the join in stages
 SELECT cu.name AS customer,
   cu.city,
   cu.state,
-  pu.id AS purchase_id, 
+  pu.id AS purchase_id,
   pu.date,
   pr.name AS product_name,
   pr.id AS product_id
@@ -316,3 +316,33 @@ SELECT cu.name AS customer,
   ON cu.id = pu.custid
   JOIN products pr
   ON pu.prodid = pr.id
+
+
+
+
+
+
+#########################################
+Lesson 6
+SQL Style Conventions
+#########################################
+
+
+
+
+----------------------------------------
+Write SQL Following General Style Guidelines
+----------------------------------------
+1. Use all caps for SQL words
+
+2. Keep lines under 80 characters
+
+3. If a query is really short, you can put it on one line 
+
+4. If your query is running long, or becoming hard to parse, you can break it
+    down with:
+    - Break your query so that each keyword begins on its own line
+    - Put each column for the SELECT clause on its own line, indented
+    - Put each clause on the ON or WHERE clause on its own line, indented
+
+5. Keep everything in the nested query at the same indentation level
