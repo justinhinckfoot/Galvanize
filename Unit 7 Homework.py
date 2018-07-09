@@ -106,7 +106,7 @@
     # Use an aggregate function to return the number of countries that became independent
         # in the year 1918.
 
-    # Submitted Code
+    # Provided Code
     agg_1918 = '''
     enter query here
     '''
@@ -117,3 +117,18 @@
         FROM country
         WHERE indepyear = 1918;
     '''
+
+    # Question 2 -- SQL10
+    # Write a query that returns the average population of countries whose government is
+        # a constitutional monarchy
+
+    # Provided Code
+    agg_constmon = '''
+    enter query here
+    '''
+
+    # Submitted Code
+    agg_constmon = '''
+    SELECT AVG(population), name
+        FROM country
+        WHERE governmentform = 'Constitutional Monarchy';
