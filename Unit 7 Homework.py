@@ -173,3 +173,21 @@
         # customers whether or not they have placed an order
 
     # Answer: LEFT
+
+    # Question 2 -- SQL Q13
+    # Using the animalshp database, return a table showing the name and appearance
+        # of every pet. Order by pet name
+
+    # Provided Code
+    join_pets = '''
+    enter query here
+    '''
+
+    # Submitted Code
+    join_pets = '''
+    SELECT name, appearance
+        FROM pets
+        JOIN animals
+        ON pets.species = animals.species
+        ORDER BY name;
+    '''
