@@ -251,4 +251,68 @@ SELECT DISTINCT is helpful to remove duplicates
 .width A B ... Z -- specifies the width of each column in a database
     can be helpful if some columns have longer character lengths
 
-    
+
+
+
+
+#########################################
+Lesson 5
+Joining Tables
+#########################################
+
+
+
+
+----------------------------------------
+Introduction to Joins
+----------------------------------------
+joins allow us to pull data from multiple tables and display it all together by matching on shared columns
+
+star schema -- one (or more) fact tables keeping track of relations, and various dimension tables
+    branching off from the central fact table to hold specific information about products, users, etc.
+
+SELECT name, city, purchases.id, date
+  FROM customers
+  JOIN purchases
+  ON customers.id = purchases.custid
+
+JOIN -- describes which tables you want to link
+ON -- describes how you want to link them
+
+aliasing tables can help avoid having to type the full name of a table each time
+
+SELECT cu.name, cu.city, cu.state, pu.id, pu.date
+  FROM customers cu
+  JOIN purchases pu
+  ON cu.id = pu.custid;
+
+
+
+
+----------------------------------------
+Types of Joins
+----------------------------------------
+there are three types of joins -- inner, full outer, and left/right outer
+
+
+
+
+
+
+----------------------------------------
+Multiple Joins
+----------------------------------------
+you can specify multiple joins by defining the join in stages
+
+SELECT cu.name AS customer,
+  cu.city,
+  cu.state,
+  pu.id AS purchase_id, 
+  pu.date,
+  pr.name AS product_name,
+  pr.id AS product_id
+  FROM customers cu
+  JOIN purchases pu
+  ON cu.id = pu.custid
+  JOIN products pr
+  ON pu.prodid = pr.id
