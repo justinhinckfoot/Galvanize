@@ -243,3 +243,25 @@
     SELECT COUNT(name)
     FROM city
     '''
+
+    # Question 2 -- SQL Checkpoint Q2
+    # A natural thing to wonder about these cities is how they are distributed
+        # around the world
+        # Write a query that returns the countrycode and count of cities
+            # in that country for only the country with the most cities in the table
+
+    # Provided Code
+
+    countrycode_citycount = '''
+    write your query here
+    '''
+
+    # Submitted Code
+
+    countrycode_citycount = '''
+    SELECT continent,
+            COUNT(ci.name)
+        FROM city ci
+        JOIN country
+        ON ci.countrycode = country.code
+        GROUP BY continent 
