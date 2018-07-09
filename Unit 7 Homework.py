@@ -223,3 +223,23 @@
     HAVING num_cities > 5
     ORDER BY avg_city_pop
     LIMIT 10;
+
+# Unit 7 Checkpoint
+
+    # Question 1 -- SQL Checkpoint Q1
+    # As you begin exploring the city table from the world database,
+        # a place to start is to determine how many cities are in the table
+        # Write a query that returns this value
+
+    # Provided Code
+
+    cities = '''
+    write your query here
+    '''
+
+    # Submitted Code
+
+    cities = '''
+    SELECT COUNT(name)
+    FROM city
+    '''
