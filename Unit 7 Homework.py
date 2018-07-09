@@ -191,3 +191,35 @@
         ON pets.species = animals.species
         ORDER BY name;
     '''
+
+# Lesson 6 -- SQL Style Naming Conventions
+
+    # Question 1 -- SQL Style
+    # The following is a valid SQL query with multiple style flaws
+    # Rewrite the query to make it more readable.
+    # Do not change any of the actual text of the query
+
+    # Provided Code
+
+    SELECT co.name, co.population as country_pop,
+    count(ct.population) as num_cities,
+    printf("%.2f", avg(ct.population)) as avg_city_pop
+    FROM city ct
+    JOIN country co on ct.countrycode = co.code
+    GROUP BY ct.countrycode
+    having num_cities > 5
+    order by avg_city_pop limit 10;
+
+    # Submitted Code
+
+    SELECT co.name,
+        co.population AS country_pop,
+        COUNT(ct.population) AS num_cities,
+        PRINTF("%.2f", AVG(ct.population)) AS avg_city_pop
+    FROM city ct
+    JOIN country co
+    ON ct.countrycode = co.code
+    GROUP BY ct.countrycode
+    HAVING num_cities > 5
+    ORDER BY avg_city_pop
+    LIMIT 10;
