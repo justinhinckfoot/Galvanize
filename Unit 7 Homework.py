@@ -149,3 +149,27 @@
         FROM country
         GROUP BY continent;
     '''
+
+# Lesson 5 -- Joining Tables
+
+    # Previous Code
+
+    SELECT cu.name as customer,
+       cu.city,
+       cu.state,
+       pu.id as purchase_id,
+       pu.date,
+       pr.name as product_name,
+       pr.id as product_id
+    FROM customers cu
+    JOIN purchases pu
+    ON cu.id = pu.custid
+    JOIN products pr
+    ON pu.prodid = pr.id;
+
+    # Question 1 -- SQL Q12
+    # Consider the first step in the query above
+    # What one word do you need to add to the query above in order to show all
+        # customers whether or not they have placed an order
+
+    # Answer: LEFT
