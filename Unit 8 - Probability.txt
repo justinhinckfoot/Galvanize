@@ -1,0 +1,42 @@
+###########################################
+###########################################
+Unit 8 -- Probability
+###########################################
+###########################################
+
+
+
+
+
+###########################################
+Lesson 1
+The Language of Probability
+###########################################
+
+
+
+-------------------------------------------
+Sets
+-------------------------------------------
+set -- a collection of distinct objects
+
+
+
+-------------------------------------------
+Experiments and Outcomes
+-------------------------------------------
+experiment -- the process of trying something out to see what happens
+
+experiment (data science) -- the process of observing and recording the result
+of a random phenomenon
+
+random (statistics) -- an event whose outcome can only be described using
+probability
+
+
+
+-------------------------------------------
+Sample Space
+-------------------------------------------
+sample space -- a set of all possible outcomes that could be observed from an
+experiment
