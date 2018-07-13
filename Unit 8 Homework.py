@@ -59,3 +59,11 @@
 
     # Yes XXXXXXXXXXXXXXX
     # No
+
+    # Question 3 -- Conditional Probability and Independence
+
+    # Is the event that a number is divisible by 6 independent of the
+    # event that a number is even?
+
+    # Yes
+    # NO XXXXXXXXXXXXXXX
