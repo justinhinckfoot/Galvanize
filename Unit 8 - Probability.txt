@@ -67,3 +67,40 @@ complement -- E1^C
 
 things are considered disjointed if they are mutually exclusive -- can only
   exist in one thing but not the other(s)
+
+
+
+
+###########################################
+Lesson 3
+Formal Set Notation
+###########################################
+
+
+
+
+
+
+###########################################
+Lesson 4
+Dependence and Independence
+###########################################
+a single outcome can induce the occurrence of multiple events
+
+a roll of two dice with the outcome that both show 5 simultaneously induces the events
+  - an above average roll total
+  - a double
+  - a roll totaling 10
+
+testing conditional probability uses the pipe character (|) (E2 | E1)
+  - the left to the left is the event whose probability you are interested in
+  - the event to the right is something that is known to have occurred and be true
+
+  ex. the probability of E2 given that E1 has occurred
+
+dependence notation
+  Pr(E2 | E1) <> Pr(E2)
+
+independence notation
+  Pr(E2 | E1) = Pr(E2)
+      ^^ the inverse of that statement would also hold true -- Pr(E1 | E2) = Pr(E1)
