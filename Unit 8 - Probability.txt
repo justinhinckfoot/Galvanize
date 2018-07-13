@@ -104,3 +104,18 @@ dependence notation
 independence notation
   Pr(E2 | E1) = Pr(E2)
       ^^ the inverse of that statement would also hold true -- Pr(E1 | E2) = Pr(E1)
+
+
+
+
+###########################################
+Lesson 5
+The Chain Rule
+###########################################
+lesson 4 showed dividing, the chain rule revolves around multiplying the sets
+
+Pr(E1|E2)Pr(E1)
+  ^^^ the inverse still holds true meaning:
+    Pr(E1|E2)Pr(E1) = Pr(E2|E1)Pr(E1)
+
+the chain rule easily extends to sets with more than two events
