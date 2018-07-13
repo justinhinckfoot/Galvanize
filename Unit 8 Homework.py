@@ -38,4 +38,16 @@
         # A\S
         # S\A XXXXXXXXXXXXXXX
         # S - A
-        # none of the above 
+        # none of the above
+
+# Lesson 4 -- Dependence and Independence
+
+    # Question 1 -- Definition of Conditional Probability
+
+    # Which of the following always defined Pr(E2 | E1)
+
+    # Pr(E2)
+    # The intersection of E2 and E1
+    # The intersection of E1 and E2
+    # The intersection of E1 and E2 divided by Pr(E1) XXXXXXXXXXXXXXX
+    # The intersection of E2 and E1 divided by Pr(E2)
