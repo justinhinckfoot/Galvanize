@@ -67,3 +67,17 @@
 
     # Yes
     # NO XXXXXXXXXXXXXXX
+
+# Lesson 5 -- The Chain Rule
+
+    # Quesiton 1
+
+    # What is the probability that the first 4-cards drawn from a standard deck
+    # of playing cards are all non-face cards?
+
+    # Quesiton 2
+
+    # Does knowing a card has value 3 change the probability that this card is a club?
+    # Does knowing that a card is red change the probability that it is a diamond?
+
+    # No; Yes
