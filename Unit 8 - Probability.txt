@@ -119,3 +119,18 @@ Pr(E1|E2)Pr(E1)
     Pr(E1|E2)Pr(E1) = Pr(E2|E1)Pr(E1)
 
 the chain rule easily extends to sets with more than two events
+
+
+
+
+###########################################
+Lesson 6
+The Law of Total Probability
+###########################################
+the law of total probability helps when you don't have all necessary
+  information to compute the probability
+
+taking the probability of an intersection, complement, etc is known as a
+  joint probability
+
+taking the probability of a single item is a marginal probability
