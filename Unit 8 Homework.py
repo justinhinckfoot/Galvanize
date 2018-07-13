@@ -51,3 +51,11 @@
     # The intersection of E1 and E2
     # The intersection of E1 and E2 divided by Pr(E1) XXXXXXXXXXXXXXX
     # The intersection of E2 and E1 divided by Pr(E2)
+
+    # Question 2 -- Conditional Probability and Independence
+
+    # Is the event that a number is divisible by 5 independent of the
+    # event that a number is even?
+
+    # Yes XXXXXXXXXXXXXXX
+    # No
