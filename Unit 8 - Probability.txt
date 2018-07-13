@@ -40,3 +40,30 @@ Sample Space
 -------------------------------------------
 sample space -- a set of all possible outcomes that could be observed from an
 experiment
+
+
+
+
+###########################################
+Lesson 2
+Set Arithmetic
+###########################################
+all outcomes can be represented using set operator notation and three basics sets
+
+universal set -- the set of all respondents, options, etc.
+
+intersection -- E1 (upside-down U) E2
+    the things that are in set E1 as well as set E2
+
+union -- E1 U E2
+    the things that are in set E1 and the items that are in set E2
+
+difference -- E1 \ E2
+    the things that are in E1 but not in E2
+
+complement -- E1^C
+    the things that are not in the current set
+    Epython^C would return all of the respondents who do not use Python
+
+things are considered disjointed if they are mutually exclusive -- can only
+  exist in one thing but not the other(s)
